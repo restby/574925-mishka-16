@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Антон Толстенко](https://up.htmlacademy.ru/adaptive/16/user/574925).
-* Наставник: `Неизвестно`.
+* Наставник: `Без наставника`.
 
 ---
 
