@@ -14,33 +14,36 @@
   <body>
     <header class="main-header">
       <div class="main-header__bar">
-        <a class="logo" href="index.html" aria-label="ссылка на главную страницу магизина Mishka">
-          <img src="#" alt="логотип магизина Mishka">
+        <a class="logo  logo--main-header" href="index.html" aria-label="ссылка на главную страницу магизина Mishka">
+          <img class="logo__img  logo__img--main-header" src="#" alt="логотип магизина Mishka">
         </a>
         <button class="main-header__btn" type="button" aria-label="меню"></button>
       </div>
       <!-- /.main-header__bar -->
 
-      <ul class="navigation">
-        <li class="navigation__item">
-          <a class="navigation__link" aria-label="ссылка на страницу Каталог товаров">Каталог товаров</a>
-        </li>
-        <!-- /.navigation__item -->
-        <li class="navigation__item">
-          <a class="navigation__link" href="form.html" aria-label="ссылка на страницу Вязание на заказ">Вязание на заказ</a>
-        </li>
-        <!-- /.navigation__item -->
-        <li class="navigation__item">
-          <a class="navigation__link" href="#" aria-label="ссылка на страницу Поиска"><span>Поиск по сайту</span></a>
-        </li>
-        <!-- /.navigation__item -->
-        <li class="navigation__item">
-          <a class="navigation__link" href="#" aria-label="ссылка на страницу Корзина">Корзина: <span>пока пуста</span></a>
-        </li>
-        <!-- /.navigation__item -->
-      </ul>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" aria-label="ссылка на страницу Каталог товаров">Каталог товаров</a>
+          </li>
+          <!-- /.navigation__item -->
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html" aria-label="ссылка на страницу Вязание на заказ">Вязание на заказ</a>
+          </li>
+          <!-- /.navigation__item -->
+          <li class="navigation__item">
+            <a class="navigation__link" href="#" aria-label="ссылка на страницу Поиска"><span>Поиск по сайту</span></a>
+          </li>
+          <!-- /.navigation__item -->
+          <li class="navigation__item">
+            <a class="navigation__link" href="#" aria-label="ссылка на страницу Корзина">Корзина: <span>пока пуста</span></a>
+          </li>
+          <!-- /.navigation__item -->
+        </ul>
+        <!-- /.navigation__list -->
+      </nav>
       <!-- /.navigation -->
-    
+
       <div class="promo  promo--catalog">
         <div class="promo__inner">
           <h1 class="promo__title  title">Каталог товаров</h1>
@@ -59,8 +62,8 @@
         <ul class="galery__list">
           <li class="galery__item">
             <div class="galery__item-wrapper">
-              <a class="galery__link" href="#" aria-label="Зайчик-попрыгайчик">
-                <img src="#" alt="Зайчик-попрыгайчик" class="galery__img">
+              <a class="galery__link" href="item.html" aria-label="Зайчик-попрыгайчик">
+                <img class="galery__img" src="#" alt="Зайчик-попрыгайчик" class="galery__img">
                 <h3 class="galery__item-title">Зайчик-попрыгайчик</h3>
                 <!-- /.galery__item-title -->
               </a>
@@ -74,8 +77,8 @@
           <!-- /.galery__item -->
           <li class="galery__item">
             <div class="galery__item-wrapper">
-              <a class="galery__link" href="#" aria-label="Корзинка для белья">
-                <img src="#" alt="Корзинка для белья" class="galery__img">
+              <a class="galery__link" href="item.html" aria-label="Корзинка для белья">
+                <img class="galery__img" src="#" alt="Корзинка для белья" class="galery__img">
                 <h3 class="galery__item-title">Корзинка для белья</h3>
                 <!-- /.galery__item-title -->
               </a>
@@ -89,8 +92,8 @@
           <!-- /.galery__item -->
           <li class="galery__item">
             <div class="galery__item-wrapper">
-              <a class="galery__link" href="#" aria-label="Большая корзинка для игрушек">
-                <img src="#" alt="Большая корзинка для игрушек" class="galery__img">
+              <a class="galery__link" href="item.html" aria-label="Большая корзинка для игрушек">
+                <img class="galery__img" src="#" alt="Большая корзинка для игрушек" class="galery__img">
                 <h3 class="galery__item-title">Большая корзинка для игрушек</h3>
                 <!-- /.galery__item-title -->
               </a>
@@ -112,7 +115,7 @@
     <section class="production">
       <div class="container">
         <h3 class="production__item-title">Процесс производства</h3>
-          <!-- /.production__item-title -->       
+          <!-- /.production__item-title -->
         <div class="production__media">
           <button class="production__btn" type="button" aria-label="кнопка play"></button>
         </div>
@@ -127,26 +130,29 @@
 
     <footer class="main-footer">
       <div class="container">
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="ссылка на instagramm">
-              <img src="#" alt="instagramm">
-            </a>
-          </li>
-          <!-- /.social__item -->
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="ссылка на facebook">
-              <img src="#" alt="facebook">
-            </a>
-          </li>
-          <!-- /.social__item -->
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="ссылка на twitter">
-              <img src="#" alt="twitter">
-            </a>
-          </li>
-          <!-- /.social__item -->
-        </ul>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="ссылка на instagramm">
+                <img src="#" alt="instagramm">
+              </a>
+            </li>
+            <!-- /.social__item -->
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="ссылка на facebook">
+                <img src="#" alt="facebook">
+              </a>
+            </li>
+            <!-- /.social__item -->
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="ссылка на twitter">
+                <img src="#" alt="twitter">
+              </a>
+            </li>
+            <!-- /.social__item -->
+          </ul>
+          <!-- /.social__list -->
+        </div>
         <!-- /.social -->
 
         <div class="develop">

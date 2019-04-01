@@ -6,34 +6,38 @@
   </head>
   <body>
     <header class="main-header">
+      <header class="main-header">
       <div class="main-header__bar">
-        <a class="logo" href="index.html" aria-label="ссылка на главную страницу магизина Mishka">
-          <img src="#" alt="логотип магизина Mishka">
+        <a class="logo  logo--main-header" href="index.html" aria-label="ссылка на главную страницу магизина Mishka">
+          <img class="logo__img  logo__img--main-header" src="#" alt="логотип магизина Mishka">
         </a>
         <button class="main-header__btn" type="button" aria-label="меню"></button>
       </div>
       <!-- /.main-header__bar -->
 
-      <ul class="navigation">
-        <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html" aria-label="ссылка на страницу Каталог товаров">Каталог товаров</a>
-        </li>
-        <!-- /.navigation__item -->
-        <li class="navigation__item">
-          <a class="navigation__link" aria-label="ссылка на страницу Вязание на заказ">Вязание на заказ</a>
-        </li>
-        <!-- /.navigation__item -->
-        <li class="navigation__item">
-          <a class="navigation__link" href="#" aria-label="ссылка на страницу Поиска"><span>Поиск по сайту</span></a>
-        </li>
-        <!-- /.navigation__item -->
-        <li class="navigation__item">
-          <a class="navigation__link" href="#" aria-label="ссылка на страницу Корзина">Корзина: <span>пока пуста</span></a>
-        </li>
-        <!-- /.navigation__item -->
-      </ul>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html" aria-label="ссылка на страницу Каталог товаров">Каталог товаров</a>
+          </li>
+          <!-- /.navigation__item -->
+          <li class="navigation__item">
+            <a class="navigation__link" aria-label="ссылка на страницу Вязание на заказ">Вязание на заказ</a>
+          </li>
+          <!-- /.navigation__item -->
+          <li class="navigation__item">
+            <a class="navigation__link" href="#" aria-label="ссылка на страницу Поиска"><span>Поиск по сайту</span></a>
+          </li>
+          <!-- /.navigation__item -->
+          <li class="navigation__item">
+            <a class="navigation__link" href="#" aria-label="ссылка на страницу Корзина">Корзина: <span>пока пуста</span></a>
+          </li>
+          <!-- /.navigation__item -->
+        </ul>
+        <!-- /.navigation__list -->
+      </nav>
       <!-- /.navigation -->
-    
+
       <div class="promo  promo--catalog">
         <div class="promo__inner">
           <h1 class="promo__title  title">Вязание на заказ</h1>
@@ -44,13 +48,13 @@
       <!-- /.promo  promo--catalog -->
     </header>
     <!-- /.main-header -->
-    
+
     <form class="form" action="https://echo.htmlacademy.ru" method="POST">
       <div class="container">
         <p class="form__slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <!-- /.form__text -->
 
-        <fieldset class="type">
+        <fieldset class="form__fieldset  type">
           <legend class="type__title  fieldset-legend">Тип</legend>
           <!-- /.type__title -->
           <ul class="type__list">
@@ -69,7 +73,7 @@
         </fieldset>
         <!-- /.type -->
 
-        <fieldset class="color">
+        <fieldset class="form__fieldset  color">
           <legend class="color__title  fieldset-legend">Тип</legend>
           <!-- /.color__title -->
           <ul class="color__list">
@@ -108,7 +112,7 @@
         </fieldset>
         <!-- /.color -->
 
-        <fieldset class="personal">
+        <fieldset class="form__fieldset  personal">
           <legend class="personal__title  fieldset-legend">Тип</legend>
           <!-- /.personal__title -->
           <ul class="personal__list">
@@ -132,7 +136,7 @@
         </fieldset>
         <!-- /.personal -->
 
-        <fieldset class="phone">
+        <fieldset class="form__fieldset  phone">
           <legend class="phone__title  fieldset-legend"></legend>
           <!-- /.phone__title  fieldset-legend -->
           <label class="phone__input-title" for="phone">Тел</label>
@@ -140,7 +144,7 @@
         </fieldset>
         <!-- /.phone -->
 
-        <fieldset class="email">
+        <fieldset class="form__fieldset  email">
           <legend class="email__title  fieldset-legend"></legend>
           <!-- /.phone__title  fieldset-legend -->
           <label class="email__input-title" for="email">E-mail</label>
@@ -148,7 +152,7 @@
         </fieldset>
         <!-- /.email -->
 
-        <fieldset class="textarea">
+        <fieldset class="form__fieldset  textarea">
           <legend class="textarea__title  fieldset-legend">Доп</legend>
           <!-- /.textarea__title  fieldset-legend -->
           <textarea class="textarea__field" cols="1" rows="1" placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -165,26 +169,29 @@
 
     <footer class="main-footer">
       <div class="container">
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="ссылка на instagramm">
-              <img src="#" alt="instagramm">
-            </a>
-          </li>
-          <!-- /.social__item -->
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="ссылка на facebook">
-              <img src="#" alt="facebook">
-            </a>
-          </li>
-          <!-- /.social__item -->
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="ссылка на twitter">
-              <img src="#" alt="twitter">
-            </a>
-          </li>
-          <!-- /.social__item -->
-        </ul>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="ссылка на instagramm">
+                <img src="#" alt="instagramm">
+              </a>
+            </li>
+            <!-- /.social__item -->
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="ссылка на facebook">
+                <img src="#" alt="facebook">
+              </a>
+            </li>
+            <!-- /.social__item -->
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="ссылка на twitter">
+                <img src="#" alt="twitter">
+              </a>
+            </li>
+            <!-- /.social__item -->
+          </ul>
+          <!-- /.social__list -->
+        </div>
         <!-- /.social -->
 
         <div class="develop">
