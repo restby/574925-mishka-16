@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__bar">
+        <a class="logo" href="index.html" aria-label="ссылка на главную страницу магизина Mishka">
+          <img src="#" alt="логотип магизина Mishka">
+        </a>
+        <button class="main-header__btn" type="button" aria-label="меню"></button>
+      </div>
+      <!-- /.main-header__bar -->
+
+      <ul class="navigation">
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html" aria-label="ссылка на страницу Каталог товаров">Каталог товаров</a>
+        </li>
+        <!-- /.navigation__item -->
+        <li class="navigation__item">
+          <a class="navigation__link" aria-label="ссылка на страницу Вязание на заказ">Вязание на заказ</a>
+        </li>
+        <!-- /.navigation__item -->
+        <li class="navigation__item">
+          <a class="navigation__link" href="#" aria-label="ссылка на страницу Поиска"><span>Поиск по сайту</span></a>
+        </li>
+        <!-- /.navigation__item -->
+        <li class="navigation__item">
+          <a class="navigation__link" href="#" aria-label="ссылка на страницу Корзина">Корзина: <span>пока пуста</span></a>
+        </li>
+        <!-- /.navigation__item -->
+      </ul>
+      <!-- /.navigation -->
+    
+      <div class="promo  promo--catalog">
+        <div class="promo__inner">
+          <h1 class="promo__title  title">Вязание на заказ</h1>
+          <!-- /.promo__title  title -->
+        </div>
+        <!-- /.promo__inner -->
+      </div>
+      <!-- /.promo  promo--catalog -->
+    </header>
+    <!-- /.main-header -->
+    
+    <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+      <div class="container">
+        <p class="form__slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <!-- /.form__text -->
+
+        <fieldset class="type">
+          <legend class="type__title  fieldset-legend">Тип</legend>
+          <!-- /.type__title -->
+          <ul class="type__list">
+            <li class="type__item">
+              <input type="radio" name="type" value="accessory" id="accessory" aria-label="Аксессуар для интерьера">
+              <label for="accessory">Аксессуар для интерьера</label>
+            </li>
+            <!-- /.type__item -->
+            <li class="type__item">
+              <input type="radio" name="type" value="toy" id="toy" aria-label="Детская игрушка">
+              <label for="toy">Детская игрушка</label>
+            </li>
+            <!-- /.type__item -->
+          </ul>
+          <!-- /.type__list -->
+        </fieldset>
+        <!-- /.type -->
+
+        <fieldset class="color">
+          <legend class="color__title  fieldset-legend">Тип</legend>
+          <!-- /.color__title -->
+          <ul class="color__list">
+            <li class="color__item">
+              <input type="checkbox" id="white" name="white" aria-label="Белый">
+              <label for="white">Белый</label>
+            </li>
+            <!-- /.color__item -->
+            <li class="color__item">
+              <input type="checkbox" id="grey" name="grey" aria-label="Серый">
+              <label for="grey">Серый</label>
+            </li>
+            <!-- /.color__item -->
+            <li class="color__item">
+              <input type="checkbox" id="tiffany" name="tiffany" aria-label="«Тиффани»">
+              <label for="tiffany">«Тиффани»</label>
+            </li>
+            <!-- /.color__item -->
+            <li class="color__item">
+              <input type="checkbox" id="black" name="black" aria-label="Черный">
+              <label for="black">Черный</label>
+            </li>
+            <!-- /.color__item -->
+            <li class="color__item">
+              <input type="checkbox" id="pink" name="pink" aria-label="Розовый">
+              <label for="pink">Розовый</label>
+            </li>
+            <!-- /.color__item -->
+            <li class="color__item">
+              <input type="checkbox" id="orange" name="orange" aria-label="Оранжевый">
+              <label for="orange">Оранжевый</label>
+            </li>
+            <!-- /.color__item -->
+          </ul>
+          <!-- /.color__list -->
+        </fieldset>
+        <!-- /.color -->
+
+        <fieldset class="personal">
+          <legend class="personal__title  fieldset-legend">Тип</legend>
+          <!-- /.personal__title -->
+          <ul class="personal__list">
+            <li class="personal__item">
+              <label for="name">Имя</label>
+              <input type="text" id="name" placeholder="Введите ваше имя*">
+            </li>
+            <!-- /.personal__item -->
+            <li class="personal__item">
+              <label for="surname">Фамилия</label>
+              <input type="text" id="surname" placeholder="Укажите фамилию*">
+            </li>
+            <!-- /.personal__item -->
+            <li class="personal__item">
+              <label for="patronymic">Отчество</label>
+              <input type="text" id="patronymic" placeholder="Отчество, если желаете">
+            </li>
+            <!-- /.personal__item -->
+          </ul>
+          <!-- /.personal__list -->
+        </fieldset>
+        <!-- /.personal -->
+
+        <fieldset class="phone">
+          <legend class="phone__title  fieldset-legend"></legend>
+          <!-- /.phone__title  fieldset-legend -->
+          <label class="phone__input-title" for="phone">Тел</label>
+          <input class="phone__input" type="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        </fieldset>
+        <!-- /.phone -->
+
+        <fieldset class="email">
+          <legend class="email__title  fieldset-legend"></legend>
+          <!-- /.phone__title  fieldset-legend -->
+          <label class="email__input-title" for="email">E-mail</label>
+          <input class="email__input" type="email" id="email" placeholder="Ваш Email*">
+        </fieldset>
+        <!-- /.email -->
+
+        <fieldset class="textarea">
+          <legend class="textarea__title  fieldset-legend">Доп</legend>
+          <!-- /.textarea__title  fieldset-legend -->
+          <textarea class="textarea__field" cols="1" rows="1" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+        <!-- /.textarea -->
+
+        <button class="form__btn  link" type="submit" aria-label="Отправить заказ">ОТПРАВИТЬ ЗАКАЗ</button>
+        <p class="form__text">*Поля обязательны для заполнения</p>
+        <!-- /.form__text -->
+      </div>
+      <!-- /.container -->
+    </form>
+    <!-- /.form -->
+
+    <footer class="main-footer">
+      <div class="container">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="ссылка на instagramm">
+              <img src="#" alt="instagramm">
+            </a>
+          </li>
+          <!-- /.social__item -->
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="ссылка на facebook">
+              <img src="#" alt="facebook">
+            </a>
+          </li>
+          <!-- /.social__item -->
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="ссылка на twitter">
+              <img src="#" alt="twitter">
+            </a>
+          </li>
+          <!-- /.social__item -->
+        </ul>
+        <!-- /.social -->
+
+        <div class="develop">
+          <span class="develop__text">Разработано</span>
+          <img src="#" alt="HTMLAcademy">
+        </div>
+        <!-- /.develop -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.main-footer -->
+  </body>
+</html>
