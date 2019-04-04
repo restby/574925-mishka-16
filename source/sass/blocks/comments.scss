@@ -16,12 +16,13 @@
   @include list-reset;
 }
 
-.comments__slide {
+// .comments__slide {
+//
+// }
 
-}
-.comments__slide--1 {
-
-}
+// .comments__slide--1 {
+//
+// }
 
 .comments__body {
   @include display-flex-column;
@@ -30,7 +31,6 @@
 .comments__text {
   @include ma-pa-reset;
   margin-bottom: 35px;
-  padding-right: 40px;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
