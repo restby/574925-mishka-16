@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -37,13 +38,9 @@
       </nav>
       <!-- /.navigation -->
 
-
       <div class="promo  promo--index">
-        <div class="promo__inner">
-          <h1 class="promo__title  title">Милые штуки ручной работы для дома</h1>
-          <!-- /.promo__title  title -->
-        </div>
-        <!-- /.promo__inner -->
+        <h1 class="promo__title  title">Милые штуки ручной<br>работы для дома</h1>
+        <!-- /.promo__title  title -->
       </div>
       <!-- /.promo  promo--index -->
 
@@ -93,7 +90,7 @@
         </table>
         <!-- /.goods__table -->
         <img class="goods__img" src="#" alt="Вязаные корзинки">
-        <span class="goods__price"><span>990</span> руб.</span>
+        <p class="goods__price"><span>990</span> руб.</p>
         <button class="goods__link  link" type="button" aria-label="Заказать">Заказать</button>
       </div>
       <!-- /.container -->
@@ -102,16 +99,11 @@
 
     <section class="about">
       <div class="container">
-        <h2 class="about__title  title">АВАРД СЕРВИС</h2>
+        <h2 class="about__title  title">Коротко о нас:</h2>
         <!-- /.about__title  title -->
         <ul class="about__list">
           <li class="about__item">
             <p class="about__text">Экологически чистые материалы</p>
-            <!-- /.about__text -->
-          </li>
-          <!-- /.about__item -->
-          <li class="about__item">
-            <p class="about__text">Связано вручную с любовью и умилением</p>
             <!-- /.about__text -->
           </li>
           <!-- /.about__item -->
@@ -121,12 +113,17 @@
           </li>
           <!-- /.about__item -->
           <li class="about__item">
-            <p class="about__text">Поддержка отечественного роизводителя</p>
+            <p class="about__text">Увеличивает лайки на фотографиях</p>
             <!-- /.about__text -->
           </li>
           <!-- /.about__item -->
           <li class="about__item">
-            <p class="about__text">Увеличивает лайки на фотографиях</p>
+            <p class="about__text">Связано вручную с любовью и умилением</p>
+            <!-- /.about__text -->
+          </li>
+          <!-- /.about__item -->
+          <li class="about__item">
+            <p class="about__text">Поддержка отечественного роизводителя</p>
             <!-- /.about__text -->
           </li>
           <!-- /.about__item -->
@@ -146,7 +143,6 @@
       <div class="container">
         <h2 class="comments__title  title">Отзывы</h2>
         <!-- /.comments__title  title -->
-        <button class="link  comments__link" aria-label="Написать отзыв">Написать</button>
         <ul class="comments__slider">
           <li class="comments__slide  comments__slide--1">
             <div class="comments__body">
@@ -161,8 +157,8 @@
         </ul>
         <!-- /.comments__slider -->
         <div class="comments__btn-group">
-          <button class="comments__btn comments__btn--prev" aria-label="предыдущий отзыв"></button>
-          <button class="comments__btn comments__btn--next" aria-label="следующий отзыв"></button>
+          <button class="comments__btn comments__btn--prev" aria-label="предыдущий отзыв">prev</button>
+          <button class="comments__btn comments__btn--next" aria-label="следующий отзыв">next</button>
         </div>
         <!-- /.comments__btn-group -->
         <button class="comments__link  link" aria-label="Написать отзыв">Написать</button>
@@ -178,12 +174,12 @@
         <ul class="contacts__list">
           <li class="contacts__item">
             <span class="contacts__info">e-mail:</span>
-            <span class="contacts__val">info@mimimishkashop.ru</span>
+            <span class="contacts__val  contacts__val--email">info@mimimishkashop.ru</span>
           </li>
           <!-- /.contacts__item -->
           <li class="contacts__item">
             <span class="contacts__info">адрес:</span>
-            <span class="contacts__val">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+            <span class="contacts__val  contacts__val--adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
           </li>
           <!-- /.contacts__item -->
         </ul>
@@ -194,7 +190,10 @@
         <img class="contacts__img" src="#" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
       </div>
       <!-- /.contacts__map -->
-      <button class="contacts__link  link" type="button" aria-label="Напишите нам">Напишите нам</button>
+      <div class="container">
+        <button class="contacts__link  link" type="button" aria-label="Напишите нам">Напишите нам</button>
+      </div>
+      <!-- /.container -->
     </section>
     <!-- /.contacts -->
 
@@ -227,7 +226,9 @@
 
         <div class="develop">
           <span class="develop__text">Разработано</span>
-          <img src="#" alt="HTMLAcademy">
+          <a href="#" class="develop__link">
+            <img class="develop__img" src="#" alt="HTMLAcademy">
+          </a>
         </div>
         <!-- /.develop -->
       </div>
@@ -236,31 +237,34 @@
     <!-- /.main-footer -->
 
     <div class="modal">
-      <h2 class="modal__title  title">Добавить в корзину</h2>
-      <!-- /.modal__title  title -->
-      <span class="modal__text">Выберите размер:</span>
-      <form action="" class="modal__form">
-        <ul class="modal__list">
-          <li class="modal__item">
-            <input type="radio" name="size" value="size_S" id="size_S">
-            <label for="size_S" class="visually-hidden">S</label>
-          </li>
-          <!-- /.modal__item -->
-          <li class="modal__item">
-            <input type="radio" name="size" value="size_M" id="size_M">
-            <label for="size_M" class="visually-hidden">M</label>
-          </li>
-          <!-- /.modal__item -->
-          <li class="modal__item">
-            <input type="radio" name="size" value="size_L" id="size_L">
-            <label for="size_L" class="visually-hidden">L</label>
-          </li>
-          <!-- /.modal__item -->
-        </ul>
-        <!-- /.modal__list -->
-        <button class="modal__btn" type="submit" aria-label="Добавить">Добавить</button>
-      </form>
-      <!-- /.modal__form -->
+      <div class="container">
+        <h2 class="modal__title  title">Добавить<br>в корзину</h2>
+        <!-- /.modal__title  title -->
+        <p class="modal__text">Выберите размер:</p>
+        <form action="" class="modal__form">
+          <ul class="modal__list">
+            <li class="modal__item">
+              <input class="modal__input  visually-hidden" type="radio" name="size" value="size_S" id="size_S">
+              <label class="madal__label  link" for="size_S">S</label>
+            </li>
+            <!-- /.modal__item -->
+            <li class="modal__item">
+              <input class="modal__input  visually-hidden" type="radio" name="size" value="size_M" id="size_M">
+              <label class="madal__label  link" for="size_M">M</label>
+            </li>
+            <!-- /.modal__item -->
+            <li class="modal__item">
+              <input class="modal__input  visually-hidden" type="radio" name="size" value="size_L" id="size_L">
+              <label class="madal__label  link" for="size_L">L</label>
+            </li>
+            <!-- /.modal__item -->
+          </ul>
+          <!-- /.modal__list -->
+          <button class="modal__btn" type="submit" aria-label="Добавить">Добавить</button>
+        </form>
+        <!-- /.modal__form -->
+      </div>
+      <!-- /.container -->
     </div>
     <!-- /.modal -->
   </body>

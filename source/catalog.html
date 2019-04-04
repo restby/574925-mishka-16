@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 <!DOCTYPE html>
@@ -61,46 +62,55 @@
         <!-- /.visually-hidden -->
         <ul class="galery__list">
           <li class="galery__item">
+            <a class="galery__link" href="item.html" aria-label="Зайчик-попрыгайчик">
+              <img class="galery__img" width="260" height="195" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" class="galery__img">
+              <h3 class="galery__item-title">Зайчик-попрыгайчик</h3>
+              <!-- /.galery__item-title -->
+            </a>
             <div class="galery__item-wrapper">
-              <a class="galery__link" href="item.html" aria-label="Зайчик-попрыгайчик">
-                <img class="galery__img" src="#" alt="Зайчик-попрыгайчик" class="galery__img">
-                <h3 class="galery__item-title">Зайчик-попрыгайчик</h3>
-                <!-- /.galery__item-title -->
-              </a>
               <p class="galery__item-desc">Рост 30 см, вес 200 г</p>
               <!-- /.galery__item-desc -->
-              <span class="galery__price"><span>1200 </span>руб.</span>
-              <button class="galery__btn" type="button" aria-label="кнопка добавить в корзину"></button>
+              <div class="galery__inner">
+                <span class="galery__price"><span>1200 </span>руб.</span>
+                <button class="galery__btn" type="button" aria-label="кнопка добавить в корзину"></button>
+              </div>
+              <!-- /.galery__inner -->
             </div>
             <!-- /.galery__item-wrapper -->
           </li>
           <!-- /.galery__item -->
           <li class="galery__item">
+            <a class="galery__link" href="item.html" aria-label="Корзинка для белья">
+              <img class="galery__img" width="260" height="195" src="http://placehold.it/260x195" alt="Корзинка для белья" class="galery__img">
+              <h3 class="galery__item-title">Корзинка для белья</h3>
+              <!-- /.galery__item-title -->
+            </a>
             <div class="galery__item-wrapper">
-              <a class="galery__link" href="item.html" aria-label="Корзинка для белья">
-                <img class="galery__img" src="#" alt="Корзинка для белья" class="galery__img">
-                <h3 class="galery__item-title">Корзинка для белья</h3>
-                <!-- /.galery__item-title -->
-              </a>
               <p class="galery__item-desc">Диаметр 15 см, высота 10 см</p>
               <!-- /.galery__item-desc -->
-              <span class="galery__price"><span>690</span>руб.</span>
-              <button class="galery__btn" type="button" aria-label="кнопка добавить в корзину"></button>
+              <div class="galery__inner">
+                <span class="galery__price"><span>690</span>руб.</span>
+                <button class="galery__btn" type="button" aria-label="кнопка добавить в корзину"></button>
+              </div>
+              <!-- /.galery__inner -->
             </div>
             <!-- /.galery__item-wrapper -->
           </li>
           <!-- /.galery__item -->
           <li class="galery__item">
+            <a class="galery__link" href="item.html" aria-label="Большая корзинка для игрушек">
+              <img class="galery__img" width="260" height="195" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" class="galery__img">
+              <h3 class="galery__item-title">Большая корзинка для игрушек</h3>
+              <!-- /.galery__item-title -->
+            </a>
             <div class="galery__item-wrapper">
-              <a class="galery__link" href="item.html" aria-label="Большая корзинка для игрушек">
-                <img class="galery__img" src="#" alt="Большая корзинка для игрушек" class="galery__img">
-                <h3 class="galery__item-title">Большая корзинка для игрушек</h3>
-                <!-- /.galery__item-title -->
-              </a>
               <p class="galery__item-desc">Диаметр 30 см, высота 30 см</p>
               <!-- /.galery__item-desc -->
-              <span class="galery__price"><span>1500 </span>руб.</span>
-              <button class="galery__btn" type="button" aria-label="кнопка добавить в корзину"></button>
+              <div class="galery__inner">
+                <span class="galery__price"><span>1500 </span>руб.</span>
+                <button class="galery__btn" type="button" aria-label="кнопка добавить в корзину"></button>
+              </div>
+              <!-- /.galery__inner -->
             </div>
             <!-- /.galery__item-wrapper -->
           </li>
@@ -117,6 +127,7 @@
         <h3 class="production__item-title">Процесс производства</h3>
           <!-- /.production__item-title -->
         <div class="production__media">
+          <img src="http://placehold.it/260x150" alt="">
           <button class="production__btn" type="button" aria-label="кнопка play"></button>
         </div>
         <!-- /.production__media -->
@@ -157,7 +168,9 @@
 
         <div class="develop">
           <span class="develop__text">Разработано</span>
-          <img src="#" alt="HTMLAcademy">
+          <a href="#" class="develop__link">
+            <img class="develop__img" src="#" alt="HTMLAcademy">
+          </a>
         </div>
         <!-- /.develop -->
       </div>
@@ -166,31 +179,34 @@
     <!-- /.main-footer -->
 
     <div class="modal">
-      <h2 class="modal__title  title">Добавить в корзину</h2>
-      <!-- /.modal__title  title -->
-      <span class="modal__text">Выберите размер:</span>
-      <form action="" class="modal__form">
-        <ul class="modal__list">
-          <li class="modal__item">
-            <input type="radio" name="size" value="size_S" id="size_S">
-            <label for="size_S" class="visually-hidden">S</label>
-          </li>
-          <!-- /.modal__item -->
-          <li class="modal__item">
-            <input type="radio" name="size" value="size_M" id="size_M">
-            <label for="size_M" class="visually-hidden">M</label>
-          </li>
-          <!-- /.modal__item -->
-          <li class="modal__item">
-            <input type="radio" name="size" value="size_L" id="size_L">
-            <label for="size_L" class="visually-hidden">L</label>
-          </li>
-          <!-- /.modal__item -->
-        </ul>
-        <!-- /.modal__list -->
-        <button class="modal__btn" type="submit" aria-label="Добавить">Добавить</button>
-      </form>
-      <!-- /.modal__form -->
+      <div class="container">
+        <h2 class="modal__title  title">Добавить<br>в корзину</h2>
+        <!-- /.modal__title  title -->
+        <p class="modal__text">Выберите размер:</p>
+        <form action="" class="modal__form">
+          <ul class="modal__list">
+            <li class="modal__item">
+              <input class="modal__input  visually-hidden" type="radio" name="size" value="size_S" id="size_S">
+              <label class="madal__label  link" for="size_S">S</label>
+            </li>
+            <!-- /.modal__item -->
+            <li class="modal__item">
+              <input class="modal__input  visually-hidden" type="radio" name="size" value="size_M" id="size_M">
+              <label class="madal__label  link" for="size_M">M</label>
+            </li>
+            <!-- /.modal__item -->
+            <li class="modal__item">
+              <input class="modal__input  visually-hidden" type="radio" name="size" value="size_L" id="size_L">
+              <label class="madal__label  link" for="size_L">L</label>
+            </li>
+            <!-- /.modal__item -->
+          </ul>
+          <!-- /.modal__list -->
+          <button class="modal__btn" type="submit" aria-label="Добавить">Добавить</button>
+        </form>
+        <!-- /.modal__form -->
+      </div>
+      <!-- /.container -->
     </div>
     <!-- /.modal -->
   </body>

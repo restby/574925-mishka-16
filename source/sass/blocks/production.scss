@@ -1,0 +1,32 @@
+.production {
+  background-color: $color-white;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  // border: 1px solid $color-grey;
+}
+
+.production__item-title {
+  @include ma-pa-reset;
+  margin-bottom: 25px;
+  color: $color-black;
+}
+
+.production__media {
+  margin-bottom: 30px;
+}
+
+.production__btn {
+
+}
+
+.production__item-desc {
+  @include ma-pa-reset;
+  margin-bottom: 25px;
+  font-size: 13px;
+  font-weight: 400;
+  color: $color-text;
+}
+
+.production__link {
+
+}

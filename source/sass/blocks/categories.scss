@@ -1,0 +1,39 @@
+.categories {
+
+}
+
+.categories__list {
+  @include list-reset;
+}
+
+.categories__item {
+  background-color: $color-green;
+}
+
+.categories__item:last-child {
+  background-color: $color-green-alternative;
+}
+
+.categories__link {
+  @include link-reset;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: block;
+
+  &:hover {
+
+  }
+
+  &:active .categories__item-title {
+    opacity: 0.3;
+  }
+}
+
+.categories__item-title {
+  @include ma-pa-reset;
+  width: 110px;
+  font-size: 19px;
+  color: $color-white;
+}

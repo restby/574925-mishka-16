@@ -1,0 +1,21 @@
+.main-header {
+  background-color: $color-white;
+}
+
+.main-header__bar {
+  background-color: $color-white;
+}
+
+.main-header__bar {
+  @include display-flex-start;
+}
+
+.main-header__btn {
+  width: 20px;
+  height: 21px;
+  margin-top: 29px;
+  margin-right: 30px;
+  border: none;
+  background-color: transparent;
+  background-color: $color-black;
+}

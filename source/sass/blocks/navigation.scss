@@ -1,0 +1,36 @@
+.navigation {
+
+}
+
+.navigation__list {
+  @include display-flex-column;
+  @include list-reset;
+}
+
+.navigation__item {
+  background-color: $color-white;
+}
+
+.navigation__item a {
+  @include link-reset;
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 26px;
+  padding-left: 76px;
+  padding-right: 30px;
+  width: 100%;
+  border-bottom: 1px solid $color-grey;
+  color: $color-black;
+
+  &:first-child {
+    border-top: 1px solid $color-grey;;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

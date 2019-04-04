@@ -1,0 +1,47 @@
+.about {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $color-white;
+}
+
+.about__title {
+
+}
+
+.about__list {
+  @include list-reset;
+}
+
+.about__item {
+  padding-top: 86px;
+
+  &:nth-child(1) {
+    padding-right: 91px;
+  }
+
+  &:nth-child(2) {
+    padding-right: 88px;
+  }
+
+  &:nth-child(3) {
+    padding-right: 86px;
+  }
+
+  &:nth-child(4) {
+    padding-right: 38px;
+  }
+
+  &:nth-child(5) {
+    padding-right: 10px;
+  }
+
+  &:nth-child(6) {
+    padding-right: 46px;
+  }
+}
+
+.about__text {
+  @include ma-pa-reset;
+  line-height: 20px;
+  color: $color-black;
+}
