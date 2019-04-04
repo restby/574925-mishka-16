@@ -1,0 +1,19 @@
+body {
+  @include ma-pa-reset;
+  // font-family: "Roboto", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-text;
+  background-color: $color-black;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}

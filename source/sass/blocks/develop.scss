@@ -1,0 +1,19 @@
+.develop {
+  @include display-flex-start;
+  // justify-content:
+  padding-top: 25px;
+  padding-bottom: 30px;
+  background-color: $color-white-dark;
+}
+
+.develop__text {
+  margin-left: 39px;
+  margin-right: auto;
+  font-size: 19px;
+  line-height: 19px;
+  color: $color-black;
+}
+
+.develop__img {
+  margin-right: 69px;
+}

@@ -1,0 +1,29 @@
+.logo {
+  display: block;
+  width: 86px;
+  height: 35px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo--main-header {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-left: 86px;
+  margin-right: auto;
+}
+
+.logo__img {
+  width: 86px;
+  height: 35px;
+}
+
+.logo__img--main-header {
+
+}

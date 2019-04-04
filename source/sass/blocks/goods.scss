@@ -1,0 +1,60 @@
+.goods {
+  padding-top: 34px;
+  padding-bottom: 36px;
+  background-color: $color-white;
+}
+
+.goods__title {
+  margin-bottom: 5px;
+}
+
+.goods__subtitle {
+  margin-bottom: 25px;
+  line-height: 20px;
+  color: $color-green;
+  text-transform: uppercase;
+}
+
+.goods__desc {
+  @include ma-pa-reset;
+  padding-right: 30px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  color: $color-text;
+}
+
+.goods__table {
+  margin-bottom: 28px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-text;
+}
+
+
+.goods__field {
+  padding-top: 14px;
+  padding-bottom: 10px;
+}
+
+.goods__value {
+  padding-top: 14px;
+  padding-bottom: 10px;
+}
+
+.goods__img {
+  display: block;
+  margin-bottom: 29px;
+}
+
+.goods__price {
+  @include ma-pa-reset;
+  margin-bottom: 29px;
+  color: $color-text;
+  text-align: center;
+}
+
+.goods__link {
+  width: 100%;
+}
