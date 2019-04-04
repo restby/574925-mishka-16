@@ -3,7 +3,7 @@
   padding-bottom: 46px;
   background-color: $color-white;
   border: 1px solid $color-grey;
-  box-shadow: 0 10px 10px rgba(0,0,0,0.25);
+  box-shadow: 0 10px 10px rgba($color-black, 0.25);
 }
 
 .modal__title {
@@ -25,9 +25,9 @@
   text-align: center;
 }
 
-.modal__form {
-
-}
+// .modal__form {
+//
+// }
 
 .modal__list {
   @include list-reset;
@@ -36,13 +36,13 @@
   margin-bottom: 31px;
 }
 
-.modal__item {
+// .modal__item {
+//
+// }
 
-}
-
-.modal__input {
-
-}
+// .modal__input {
+//
+// }
 
 .madal__label {
   width: 82px;

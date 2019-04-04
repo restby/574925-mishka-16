@@ -1,6 +1,6 @@
-.categories {
-
-}
+// .categories {
+//
+// }
 
 .categories__list {
   @include list-reset;
@@ -22,9 +22,9 @@
   padding-right: 30px;
   display: block;
 
-  &:hover {
-
-  }
+  // &:hover {
+  //
+  // }
 
   &:active .categories__item-title {
     opacity: 0.3;
