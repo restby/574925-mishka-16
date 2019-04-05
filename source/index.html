@@ -11,26 +11,32 @@
         <a class="logo  logo--main-header" aria-label="ссылка на главную страницу магизина Mishka">
           <img class="logo__img  logo__img--main-header" src="#" alt="логотип магизина Mishka">
         </a>
-        <button class="main-header__btn" type="button" aria-label="меню"></button>
+        <button class="main-header__btn" type="button" aria-label="меню">
+          <img src="img/icon-menu-close.svg" alt="кнопка меню">
+        </button>
       </div>
       <!-- /.main-header__bar -->
 
       <nav class="navigation">
         <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="catalog.html" aria-label="ссылка на страницу Каталог товаров">Каталог товаров</a>
+          <li class="navigation__item  navigation__item--catalog">
+            <a class="navigation__link" href="catalog.html" aria-label="ссылка на страницу Каталог товаров">Каталог товаров</a>
           </li>
           <!-- /.navigation__item -->
-          <li class="navigation__item">
-            <a href="form.html" aria-label="ссылка на страницу Вязание на заказ">Вязание на заказ</a>
+          <li class="navigation__item  navigation__item--form">
+            <a class="navigation__link" href="form.html" aria-label="ссылка на страницу Вязание на заказ">Вязание на заказ</a>
           </li>
           <!-- /.navigation__item -->
-          <li class="navigation__item">
-            <a href="search.html" aria-label="ссылка на страницу Поиска"><span>Поиск по сайту</span></a>
+          <li class="navigation__item  navigation__item--search">
+            <a class="navigation__link  navigation__link--search" href="search.html" aria-label="ссылка на страницу Поиска">
+              <img src="img/icon-search.svg" alt="Поиск по сайту"><span>Поиск по сайту</span>
+            </a>
           </li>
           <!-- /.navigation__item -->
-          <li class="navigation__item">
-            <a href="cart.html" aria-label="ссылка на страницу Корзина">Корзина: <span>пока пуста</span></a>
+          <li class="navigation__item  navigation__item--cart">
+            <a class="navigation__link  navigation__link--cart" href="cart.html" aria-label="ссылка на страницу Корзина">
+              <img src="img/icon-cart.svg" alt="Корзина">Корзина: <span>пока пуста</span>
+            </a>
           </li>
           <!-- /.navigation__item -->
         </ul>
@@ -227,7 +233,7 @@
         <div class="develop">
           <span class="develop__text">Разработано</span>
           <a href="#" class="develop__link">
-            <img class="develop__img" src="#" alt="HTMLAcademy">
+            <img class="develop__img" src="img/htmlacademy.svg" alt="HTMLAcademy">
           </a>
         </div>
         <!-- /.develop -->

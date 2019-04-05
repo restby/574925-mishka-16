@@ -9,22 +9,23 @@
 
 .navigation__item {
   background-color: $color-white;
+
+  &:first-child {
+    border-top: 1px solid $color-grey;
+  }
 }
 
-.navigation__item a {
+.navigation__link {
   @include link-reset;
+  position: relative;
   display: block;
   padding-top: 27px;
-  padding-bottom: 26px;
+  padding-bottom: 27px;
   padding-left: 76px;
   padding-right: 30px;
   width: 100%;
   border-bottom: 1px solid $color-grey;
   color: $color-black;
-
-  &:first-child {
-    border-top: 1px solid $color-grey;
-  }
 
   &:hover {
     opacity: 0.6;
@@ -32,5 +33,19 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &--search img {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    opacity: 0.2;
+  }
+
+  &--cart img {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    opacity: 0.2;
   }
 }
