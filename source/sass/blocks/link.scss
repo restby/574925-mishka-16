@@ -10,4 +10,16 @@
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-text;
+    border: 2px solid $color-text;
+    color: $color-white;
+  }
+
+  &:active {
+    background-color: $color-text;
+    border: 2px solid $color-text;
+    color: rgba($color-white, 0.3);
+  }
 }

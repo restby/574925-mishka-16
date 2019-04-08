@@ -29,9 +29,19 @@
   color: $color-text;
 }
 
-// .contacts__val--email {
-//
-// }
+.contacts__val--email {
+  @include link-reset;
+  border-bottom: 1px solid $color-green;
+
+  &:hover {
+    color: $color-green-alternative;
+  }
+
+  &:active {
+    color: $color-green-alternative;
+    opacity: 0.3;
+  }
+}
 
 .contacts__val--adress {
   padding-right: 42px;

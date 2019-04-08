@@ -1,9 +1,9 @@
 .develop {
-  @include display-flex-start;
-  // justify-content:
   padding-top: 25px;
   padding-bottom: 30px;
   background-color: $color-white-dark;
+  @include display-flex-start;
+  justify-content: center;
 }
 
 .develop__text {
@@ -12,10 +12,28 @@
   font-size: 19px;
   line-height: 19px;
   color: $color-black;
+  vertical-align: top;
 }
 
-.develop__img {
+.develop__link {
+  @include link-reset;
+  margin-right: 39px;
+
+  &:active .develop__text{
+    opacity: 0.3;
+  }
+
+  &:hover svg {
+    fill: $color-green-alternative;;
+  }
+
+  &:active svg {
+    fill: $color-green-alternative;
+    opacity: 0.3;
+  }
+}
+
+.develop__link svg {
   width: 27px;
   height: 34px;
-  margin-right: 39px;
 }

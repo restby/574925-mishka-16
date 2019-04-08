@@ -28,21 +28,31 @@
   color: $color-black;
 
   &:hover {
-    opacity: 0.6;
+    color: rgba($color-black, 0.6);
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba($color-black, 0.3);
   }
 
-  &--search img {
+  &:hover svg {
+    opacity: 1;
+    fill: $color-green;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+    fill: $color-green;
+  }
+
+  &--search svg {
     position: absolute;
     top: 32px;
     left: 32px;
     opacity: 0.2;
   }
 
-  &--cart img {
+  &--cart svg {
     position: absolute;
     top: 32px;
     left: 32px;

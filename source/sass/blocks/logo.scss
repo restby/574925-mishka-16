@@ -2,7 +2,9 @@
   display: block;
   width: 86px;
   height: 35px;
+}
 
+a.logo[href] {
   &:hover {
     opacity: 0.6;
   }

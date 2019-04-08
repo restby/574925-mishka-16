@@ -14,6 +14,13 @@
   margin-right: 40px;
 }
 
-// .social__link {
-//
-// }
+.social__link svg {
+  &:hover {
+    fill: $color-green-alternative;
+  }
+
+  &:active {
+    fill: $color-green-alternative;
+    opacity: 0.3;
+  }
+}
