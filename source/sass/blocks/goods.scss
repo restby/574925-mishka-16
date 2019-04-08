@@ -1,6 +1,6 @@
 .goods {
-  padding-top: 34px;
-  padding-bottom: 36px;
+  padding-top: 27px;
+  padding-bottom: 41px;
   background-color: $color-white;
   position: relative;
 
@@ -18,10 +18,11 @@
 }
 
 .goods__title {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .goods__subtitle {
+  display: block;
   margin-bottom: 25px;
   line-height: 20px;
   color: $color-green;
@@ -31,7 +32,7 @@
 .goods__desc {
   @include ma-pa-reset;
   padding-right: 11px;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   font-size: 15px;
   font-weight: 400;
   color: $color-text;
@@ -47,23 +48,43 @@
 
 
 .goods__field {
+  width: 98px;/*_____________*/
+  padding: 0;
+  border-bottom: 1px solid $color-grey;
   padding-top: 14px;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
 }
 
 .goods__value {
+  width: 162px;/*_____________*/
+  padding: 0;
+  border-bottom: 1px solid $color-grey;
   padding-top: 14px;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
+}
+
+tr:nth-child(2) td.goods__field,
+tr:nth-child(2) td.goods__value {
+  padding-top: 8px;
+}
+
+tr:nth-child(3) td.goods__field,
+tr:nth-child(3) td.goods__value {
+  padding-top: 8px;
 }
 
 .goods__img {
   display: block;
-  margin-bottom: 29px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 260px;
+  height: 315px;
+  margin-bottom: 22px;
 }
 
 .goods__price {
   @include ma-pa-reset;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
   color: $color-text;
   text-align: center;
 }

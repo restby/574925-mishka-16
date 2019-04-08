@@ -1,6 +1,6 @@
-// .navigation {
-//
-// }
+.navigation {
+  display: none;
+}
 
 .navigation__list {
   @include display-flex-column;

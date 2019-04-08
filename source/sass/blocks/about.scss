@@ -1,5 +1,5 @@
 .about {
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 30px;
   background-color: $color-white;
 }
@@ -22,8 +22,8 @@
     &::before {
       position: absolute;
       content: "";
-      top: 0;
-      left: 0;
+      top: 32px;
+      left: 8px;
       width: 32px;
       height: 37px;
       background-image: url("../../img/icon-feature-flower.svg");
@@ -38,7 +38,7 @@
     &::before {
       position: absolute;
       content: "";
-      top: 0;
+      top: 30px;
       left: 0;
       width: 47px;
       height: 27px;

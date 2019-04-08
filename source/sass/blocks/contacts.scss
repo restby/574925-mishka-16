@@ -58,9 +58,13 @@
   margin-bottom: 39px;
 }
 
-// .contacts__img {
-//
-// }
+.contacts__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 322px;
+  height: 457px;
+}
 
 .contacts__link {
   width: 100%;
