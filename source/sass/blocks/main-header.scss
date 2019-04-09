@@ -17,3 +17,20 @@
   background-color: transparent;
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    @include display-flex-start;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .main-header__bar {
+    min-width: 370px;
+    margin-right: auto;
+  }
+
+  .main-header__btn {
+    display: none;
+  }
+}

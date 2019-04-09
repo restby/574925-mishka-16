@@ -26,6 +26,19 @@ a.logo[href] {
   height: 35px;
 }
 
-// .logo__img--main-header {
-//
-// }
+@media (min-width: $tablet-width) {
+  .logo {
+    width: 112px;
+    height: 46px;
+  }
+
+  .logo--main-header {
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+
+  .logo__img {
+    width: 112px;
+    height: 46px;
+  }
+}
