@@ -1,1 +1,61 @@
-//
+.email {
+  margin-bottom: 34px;
+  position: relative;
+}
+
+.email__title {
+  margin-bottom: 9px;
+
+  &::after {
+    margin-left: 23px;
+  }
+}
+
+.email__label {
+  position: absolute;
+  content: "";
+  top: 16px;
+  right: 4px;
+}
+
+.email__label svg {
+  width: 32px;
+  height: 32px;
+  opacity: 0.2;
+}
+
+.email__input:hover + .email__label svg {
+  opacity: 1;
+  fill: $color-green;
+}
+
+.email__input:focus + .email__label svg {
+  opacity: 1;
+  fill: $color-green-alternative;
+}
+
+.email__input {
+  width: 100%;
+  padding: 0;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border: none;
+  box-shadow: 0 2px 0 0 $color-black;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-text;
+
+  &:placeholder {
+    line-height: 18px;
+    font-weight: 400;
+    color: rgba($color-text, 0.3);
+  }
+
+  &:hover {
+    box-shadow: 0 2px 0 0 $color-green;
+  }
+
+  &:focus {
+    box-shadow: 0 2px 0 0 $color-green-alternative;
+  }
+}

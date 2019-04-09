@@ -1,15 +1,98 @@
 // .type {
-//
+
 // }
 
-// .type__title {
-//
-// }
+
+.type__title {
+  margin-bottom: 27px;
+
+  &::after {
+    margin-left: 31px;
+  }
+}
 
 .type__list {
   @include list-reset;
+  margin-bottom: 34px;
 }
 
-// .type__item {
-//
-// }
+.type__item {
+  margin-bottom: 21px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.type__input-label {
+  display: block;
+  padding-top: 10px;
+  min-height: 38px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid $color-text;
+    background-color: $color-white;
+  }
+
+  &:hover::before {
+    border: 2px solid $color-green;
+  }
+
+  &:active::before {
+    border: 2px solid rgba($color-text, 0.3);
+  }
+}
+
+.type__input-radio:checked ~ .type__input-label::after {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $color-green;
+}
+
+.type__input-radio:disabled ~ .type__input-label::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid rgba($color-text, 0.3);
+  background-color: $color-white;
+}
+
+.type__input-radio:disabled:checked ~ .type__input-label::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid rgba($color-text, 0.3);
+  background-color: $color-white;
+}
+
+.type__input-radio:disabled:checked ~ .type__input-label::after {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgba($color-text, 0.3);
+}
