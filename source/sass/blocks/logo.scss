@@ -28,13 +28,13 @@ a.logo[href] {
 
 @media (min-width: $tablet-width) {
   .logo {
-    width: 112px;
-    height: 46px;
+    position: absolute;
+    top: 22px;
+    left: 50px;
   }
 
   .logo--main-header {
-    margin-bottom: 20px;
-    margin-left: 50px;
+    margin: 0;
   }
 
   .logo__img {

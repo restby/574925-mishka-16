@@ -66,3 +66,32 @@
   font-size: 19px;
   color: $color-white;
 }
+
+@media (min-width: $tablet-width) {
+  .categories {
+    margin-top: -115px;
+  }
+
+  .categories__list {
+    @include display-flex-start;
+    margin-left: 50px;
+    padding-right: 50px;
+    justify-content: center
+  }
+
+  .categories__item {
+    width: 50%;
+  }
+
+  .categories__link {
+    padding-top: 35px;
+    padding-bottom: 36px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .categories__item-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
