@@ -118,3 +118,84 @@
   line-height: 20px;
   color: $color-black;
 }
+
+@media (min-width: $tablet-width) {
+  .about {
+    padding-top: 55px;
+    padding-bottom: 80px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 50%;
+    padding-top: 100px;
+
+    &:nth-child(1) {
+      order: 1;
+      padding-right: 138px;
+
+      &::before {
+        top: 43px;
+        left: 9px;
+      }
+    }
+
+    &:nth-child(2) {
+      order: 3;
+      padding-top: 110px;
+      padding-right: 112px;
+
+      &::before {
+        top: 57px;
+        left: 0;
+      }
+    }
+
+    &:nth-child(3) {
+      order: 5;
+      padding-top: 110px;
+      padding-right: 132px;
+
+      &::before {
+        top: 62px;
+        left: 0;
+      }
+    }
+
+    &:nth-child(4) {
+      order: 2;
+      padding-right: 78px;
+
+      &::before {
+        top: 46px;
+        left: 0;
+      }
+    }
+
+    &:nth-child(5) {
+      order: 4;
+      padding-top: 110px;
+      padding-right: 0;
+
+      &::before {
+        top: 60px;
+        left: 0;
+      }
+    }
+
+    &:nth-child(6) {
+      order: 6;
+      padding-top: 110px;
+      padding-right: 84px;
+
+      &::before {
+        top: 58px;
+        left: 0;
+      }
+    }
+  }
+}

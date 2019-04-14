@@ -29,6 +29,17 @@
   text-transform: uppercase;
 }
 
+.goods__col {
+  &--right {
+    position: absolute;
+    width: 260px;
+    height: 315px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 350px;
+  }
+}
+
 .goods__desc {
   @include ma-pa-reset;
   padding-right: 11px;
@@ -39,7 +50,7 @@
 }
 
 .goods__table {
-  margin-bottom: 28px;
+  margin-bottom: 372px;
   font-size: 15px;
   line-height: 18px;
   font-weight: 400;
@@ -75,11 +86,8 @@ tr:nth-child(3) td.goods__value {
 
 .goods__img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 260px;
   height: 315px;
-  margin-bottom: 22px;
 }
 
 .goods__price {
@@ -94,98 +102,102 @@ tr:nth-child(3) td.goods__value {
 }
 
 @media (min-width: $tablet-width) {
-  // .goods {
-  //   padding-top: 27px;
-  //   padding-bottom: 41px;
-  //   background-color: $color-white;
-  //   position: relative;
+  .goods {
+    padding-top: 43px;
+    padding-bottom: 52px;
 
-  //   &::after {
-  //     position: absolute;
-  //     content: "";
-  //     bottom: 0;
-  //     left: 0;
-  //     width: 100%;
-  //     height: 6px;
-  //     background-image: url("../../img/bg-zigzag-line.svg");
-  //     background-repeat: repeat-x;
-  //     background-position: 0 0;
-  //   }
-  // }
+    &::after {
+      height: 15px;
+    }
+  }
 
-  // .goods__title {
-  //   margin-bottom: 3px;
-  // }
+  .goods .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-  // .goods__subtitle {
-  //   display: block;
-  //   margin-bottom: 25px;
-  //   line-height: 20px;
-  //   color: $color-green;
-  //   text-transform: uppercase;
-  // }
+  .goods__title {
+    margin-bottom: 55px;
+    margin-right: auto;
+    width: auto;
+  }
 
-  // .goods__desc {
-  //   @include ma-pa-reset;
-  //   padding-right: 11px;
-  //   margin-bottom: 12px;
-  //   font-size: 15px;
-  //   font-weight: 400;
-  //   color: $color-text;
-  // }
+  .goods__subtitle {
+    display: block;
+    width: 70px;
+    margin-bottom: 0;
+    margin-right: 30px;
+    line-height: 17px;
+    text-align: center;
 
-  // .goods__table {
-  //   margin-bottom: 28px;
-  //   font-size: 15px;
-  //   line-height: 18px;
-  //   font-weight: 400;
-  //   color: $color-text;
-  // }
+  }
 
+  .goods__col {
+    &--left {
+      width: 50%;
+      padding-right: 44px;
+    }
 
-  // .goods__field {
-  //   width: 98px;/*_____________*/
-  //   padding: 0;
-  //   border-bottom: 1px solid $color-grey;
-  //   padding-top: 14px;
-  //   padding-bottom: 11px;
-  // }
+    &--right {
+      position: static;
+      width: 50%;
+      height: auto;
+      left: 0;
+      transform: translateX(0);
+      top: 0;
+    }
+  }
 
-  // .goods__value {
-  //   width: 162px;/*_____________*/
-  //   padding: 0;
-  //   border-bottom: 1px solid $color-grey;
-  //   padding-top: 14px;
-  //   padding-bottom: 11px;
-  // }
+  .goods__desc {
+    padding-right: 0;
+    margin-bottom: 45px;
+    font-size: 17px;
+    line-height: 30px;
+  }
 
-  // tr:nth-child(2) td.goods__field,
-  // tr:nth-child(2) td.goods__value {
-  //   padding-top: 8px;
-  // }
+  .goods__table {
+    margin-bottom: 50px;
+    font-size: 15px;
+    line-height: 20px;
+  }
 
-  // tr:nth-child(3) td.goods__field,
-  // tr:nth-child(3) td.goods__value {
-  //   padding-top: 8px;
-  // }
+  .goods__field {
+    width: 98px;/*_____________*/
+    padding: 0;
+    border-bottom: 1px solid $color-grey;
+    padding-top: 0;
+    padding-bottom: 11px;
+  }
 
-  // .goods__img {
-  //   display: block;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  //   width: 260px;
-  //   height: 315px;
-  //   margin-bottom: 22px;
-  // }
+  .goods__value {
+    width: 162px;/*_____________*/
+    padding: 0;
+    border-bottom: 1px solid $color-grey;
+    padding-top: 0;
+    padding-bottom: 11px;
+  }
 
-  // .goods__price {
-  //   @include ma-pa-reset;
-  //   margin-bottom: 26px;
-  //   color: $color-text;
-  //   text-align: center;
-  // }
+  tr:nth-child(2) td.goods__field,
+  tr:nth-child(2) td.goods__value {
+    padding-top: 8px;
+  }
 
-  // .goods__link {
-  //   width: 100%;
-  // }
+  tr:nth-child(3) td.goods__field,
+  tr:nth-child(3) td.goods__value {
+    padding-top: 8px;
+  }
+
+  .goods__price {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .goods__link {
+    width: 100%;
+  }
+
+  .goods__img {
+    width: 333px;
+    height: 404px;
+  }
 }
