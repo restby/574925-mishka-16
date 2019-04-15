@@ -1,9 +1,9 @@
 .textarea {
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .textarea__title {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   &::after {
     margin-left: 25px;
@@ -16,7 +16,7 @@
   min-height: 142px;
   border: 2px solid $color-text;
   background-color: $color-white;
-  padding: 19px 17px;
+  padding: 14px 14px;
   line-height: 18px;
   font-weight: 400;
   color: $color-text;

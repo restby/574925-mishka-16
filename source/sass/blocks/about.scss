@@ -4,10 +4,6 @@
   background-color: $color-white;
 }
 
-// .about__title {
-//
-// }
-
 .about__list {
   @include list-reset;
 }
@@ -34,6 +30,7 @@
 
   &:nth-child(2) {
     padding-right: 63px;
+    padding-top: 82px;
 
     &::before {
       position: absolute;
@@ -50,12 +47,13 @@
 
   &:nth-child(3) {
     padding-right: 82px;
+    padding-top: 82px;
 
     &::before {
       position: absolute;
       content: "";
-      top: 0;
-      left: 0;
+      top: 34px;
+      left: 8px;
       width: 34px;
       height: 27px;
       background-image: url("../../img/icon-feature-heart.svg");
@@ -70,8 +68,8 @@
     &::before {
       position: absolute;
       content: "";
-      top: 0;
-      left: 0;
+      top: 34px;
+      left: 3px;
       width: 35px;
       height: 34px;
       background-image: url("../../img/icon-feature-ball.svg");
@@ -82,12 +80,13 @@
 
   &:nth-child(5) {
     padding-right: 10px;
+    padding-top: 82px;
 
     &::before {
       position: absolute;
       content: "";
-      top: 0;
-      left: 0;
+      top: 33px;
+      left: -6px;
       width: 55px;
       height: 23px;
       background-image: url("../../img/icon-feature-rocket.svg");
@@ -98,12 +97,13 @@
 
   &:nth-child(6) {
     padding-right: 46px;
+    padding-top: 82px;
 
     &::before {
       position: absolute;
       content: "";
-      top: 0;
-      left: 0;
+      top: 31px;
+      left: 3px;
       width: 33px;
       height: 32px;
       background-image: url("../../img/icon-feature-gift.svg");
@@ -121,8 +121,8 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    padding-top: 55px;
-    padding-bottom: 80px;
+    padding-top: 49px;
+    padding-bottom: 84px;
   }
 
   .about__list {
@@ -132,25 +132,25 @@
 
   .about__item {
     width: 50%;
-    padding-top: 100px;
+    padding-top: 102px;
 
     &:nth-child(1) {
       order: 1;
-      padding-right: 138px;
+      padding-right: 131px;
 
       &::before {
-        top: 43px;
+        top: 50px;
         left: 9px;
       }
     }
 
     &:nth-child(2) {
       order: 3;
-      padding-top: 110px;
-      padding-right: 112px;
+      padding-top: 112px;
+      padding-right: 104px;
 
       &::before {
-        top: 57px;
+        top: 60px;
         left: 0;
       }
     }
@@ -158,11 +158,11 @@
     &:nth-child(3) {
       order: 5;
       padding-top: 110px;
-      padding-right: 132px;
+      padding-right: 124px;
 
       &::before {
         top: 62px;
-        left: 0;
+        left: 8px;
       }
     }
 
@@ -171,8 +171,8 @@
       padding-right: 78px;
 
       &::before {
-        top: 46px;
-        left: 0;
+        top: 53px;
+        left: 2px;
       }
     }
 
@@ -182,8 +182,8 @@
       padding-right: 0;
 
       &::before {
-        top: 60px;
-        left: 0;
+        top: 63px;
+        left: -6px;
       }
     }
 
@@ -193,9 +193,14 @@
       padding-right: 84px;
 
       &::before {
-        top: 58px;
-        left: 0;
+        top: 60px;
+        left: 2px;
       }
     }
+  }
+
+  .about__text {
+    font-size: 20px;
+    line-height: 22px;
   }
 }

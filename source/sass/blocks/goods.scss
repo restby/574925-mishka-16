@@ -36,13 +36,12 @@
     height: 315px;
     left: 50%;
     transform: translateX(-50%);
-    top: 350px;
+    top: 343px;
   }
 }
 
 .goods__desc {
   @include ma-pa-reset;
-  min-height: 72px;/*____________________*/
   padding-right: 11px;
   margin-bottom: 12px;
   font-size: 15px;
@@ -51,7 +50,7 @@
 }
 
 .goods__table {
-  margin-bottom: 372px;
+  margin-bottom: 364px;
   font-size: 15px;
   line-height: 18px;
   font-weight: 400;
@@ -93,7 +92,7 @@ tr:nth-child(3) td.goods__value {
 
 .goods__price {
   @include ma-pa-reset;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
   color: $color-text;
   text-align: center;
 }
@@ -104,8 +103,8 @@ tr:nth-child(3) td.goods__value {
 
 @media (min-width: $tablet-width) {
   .goods {
-    padding-top: 43px;
-    padding-bottom: 52px;
+    padding-top: 41px;
+    padding-bottom: 68px;
 
     &::after {
       height: 15px;
@@ -118,15 +117,15 @@ tr:nth-child(3) td.goods__value {
   }
 
   .goods__title {
-    margin-bottom: 55px;
+    margin-bottom: 48px;
     margin-right: auto;
     width: auto;
   }
 
   .goods__subtitle {
-    display: block;
     width: 70px;
     margin-bottom: 0;
+    margin-top: 12px;
     margin-right: 30px;
     line-height: 17px;
     text-align: center;
@@ -146,50 +145,40 @@ tr:nth-child(3) td.goods__value {
       left: 0;
       transform: translateX(0);
       top: 0;
+      padding-top: 9px;
     }
   }
 
   .goods__desc {
     padding-right: 0;
-    margin-bottom: 45px;
+    margin-bottom: 43px;
     font-size: 17px;
     line-height: 30px;
   }
 
   .goods__table {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
     font-size: 15px;
     line-height: 20px;
   }
 
   .goods__field {
-    width: 98px;/*_____________*/
-    padding: 0;
-    border-bottom: 1px solid $color-grey;
     padding-top: 0;
-    padding-bottom: 11px;
+    padding-bottom: 10px;
   }
 
   .goods__value {
-    width: 162px;/*_____________*/
-    padding: 0;
-    border-bottom: 1px solid $color-grey;
     padding-top: 0;
-    padding-bottom: 11px;
+    padding-bottom: 10px;
   }
 
-  tr:nth-child(2) td.goods__field,
-  tr:nth-child(2) td.goods__value {
-    padding-top: 8px;
-  }
-
-  tr:nth-child(3) td.goods__field,
-  tr:nth-child(3) td.goods__value {
-    padding-top: 8px;
+  .goods__img {
+    width: 333px;
+    height: 404px;
   }
 
   .goods__price {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     font-size: 20px;
   }
 

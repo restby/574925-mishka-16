@@ -18,7 +18,7 @@
 }
 
 .comments__title {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .comments__link {
@@ -43,7 +43,7 @@
 
 .comments__text {
   @include ma-pa-reset;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -51,14 +51,14 @@
 }
 
 .comments__author {
-  margin-bottom: 15px;
-  line-height: 21px;
+  margin-bottom: 4px;
+  line-height: 24px;
   color: $color-black;
 }
 
 .comments__mail {
-  margin-bottom: 35px;
-  line-height: 30px;
+  margin-bottom: 33px;
+  line-height: 24px;
   font-weight: 400;
   color: $color-text;
 }
@@ -111,33 +111,54 @@
 
 @media (min-width: $tablet-width) {
   .comments {
-    padding-top: 86px;
+    padding-top: 77px;
+    padding-bottom: 101px;
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    &::after {
+      height: 15px;
+    }
   }
 
   .comments__title {
-    margin-bottom: 65px;
+    margin-bottom: 48px;
   }
 
   .comments__text {
     padding-right: 25px;
-    margin-bottom: 70px;
+    margin-bottom: 59px;
     font-size: 17px;
   }
 
+  .comments__author {
+    margin-bottom: 6px;
+    font-size: 18px;
+  }
+
+  .comments__mail {
+    font-size: 18px;
+  }
+
   .comments__btn-group {
-    width: 167px;
+    width: 137px;
     position: absolute;
     top: 370px;
-    right: 50px;
+    right: 71px;
+    justify-content: space-between;
   }
 
   .comments__btn {
     border: none;
+    padding: 0;
+    height: 26px;
+    width: 50px;
   }
 
   .comments__link {
     position: absolute;
-    top: 79px;
+    top: 80px;
     right: 50px;
     width: 175px;
   }

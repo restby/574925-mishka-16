@@ -1,23 +1,13 @@
 .develop {
-  padding-top: 25px;
+  padding-top: 24px;
   padding-bottom: 30px;
   background-color: $color-white-dark;
-  @include display-flex-start;
-  justify-content: center;
-}
-
-.develop__text {
-  margin-left: 39px;
-  margin-right: auto;
-  font-size: 19px;
-  line-height: 19px;
-  color: $color-black;
-  vertical-align: top;
 }
 
 .develop__link {
   @include link-reset;
-  margin-right: 39px;
+  @include display-flex-start;
+  justify-content: center;
 
   &:active .develop__text{
     opacity: 0.3;
@@ -33,7 +23,23 @@
   }
 }
 
+.develop__text {
+  margin-right: 28px;
+  font-size: 19px;
+  line-height: 19px;
+  color: $color-black;
+  vertical-align: top;
+}
+
 .develop__link svg {
   width: 27px;
   height: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .develop {
+    padding-top: 11px;
+    padding-bottom: 0;
+    background-color: none;
+  }
 }

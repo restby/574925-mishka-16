@@ -1,23 +1,18 @@
-// .type {
-
-// }
-
-
 .type__title {
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 
   &::after {
-    margin-left: 31px;
+    margin-left: 25px;
   }
 }
 
 .type__list {
   @include list-reset;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 
 .type__item {
-  margin-bottom: 21px;
+  margin-bottom: 14px;
 
   &:last-child{
     margin-bottom: 0;

@@ -1,6 +1,5 @@
 .production {
   background-color: $color-white;
-  padding-top: 25px;
   padding-bottom: 58px;
 }
 
@@ -23,15 +22,16 @@
 
 .production__item-title {
   @include ma-pa-reset;
-  margin-bottom: 25px;
-  padding-left: 90px;
+  margin-bottom: 24px;
+  padding-top: 22px;
+  padding-left: 88px;
   color: $color-black;
   position: relative;
 
   &::before {
     position: absolute;
     content: "";
-    top: 10px;
+    top: 28px;
     left: 33px;
     width: 32px;
     height: 32px;
@@ -42,7 +42,7 @@
 }
 
 .production__media {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   position: relative;
 }
 

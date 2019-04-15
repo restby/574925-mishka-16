@@ -35,6 +35,8 @@ a.logo[href] {
     position: absolute;
     top: 22px;
     left: 50px;
+    width: 112px;
+    height: 46px;
   }
 
   .logo--main-header {
@@ -43,6 +45,7 @@ a.logo[href] {
 
   .logo--main-footer {
     display: block;
+    margin-right: 114px;
     position: static;
     top: 0;
     left: 0;
