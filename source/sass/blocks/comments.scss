@@ -108,3 +108,37 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .comments {
+    padding-top: 86px;
+  }
+
+  .comments__title {
+    margin-bottom: 65px;
+  }
+
+  .comments__text {
+    padding-right: 25px;
+    margin-bottom: 70px;
+    font-size: 17px;
+  }
+
+  .comments__btn-group {
+    width: 167px;
+    position: absolute;
+    top: 370px;
+    right: 50px;
+  }
+
+  .comments__btn {
+    border: none;
+  }
+
+  .comments__link {
+    position: absolute;
+    top: 79px;
+    right: 50px;
+    width: 175px;
+  }
+}

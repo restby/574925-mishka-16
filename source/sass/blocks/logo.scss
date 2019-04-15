@@ -26,6 +26,10 @@ a.logo[href] {
   height: 35px;
 }
 
+.logo--main-footer {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .logo {
     position: absolute;
@@ -37,8 +41,24 @@ a.logo[href] {
     margin: 0;
   }
 
+  .logo--main-footer {
+    display: block;
+    position: static;
+    top: 0;
+    left: 0;
+  }
+
   .logo__img {
     width: 112px;
     height: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

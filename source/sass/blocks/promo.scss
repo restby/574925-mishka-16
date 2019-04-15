@@ -13,13 +13,13 @@
   background-repeat: no-repeat;
 }
 
-.promo__text{
-  display: none;
-}
-
 .promo__title {
   text-align: center;
   font-size: 27px;
+}
+
+.promo__link {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -34,19 +34,13 @@
     background-image: url("../../img/hero-mobile@1x.jpg");
   }
 
-  .promo__text{
-    @include ma-pa-reset;
-    display: block;
-    font-size: 15px;
-    font-weight: 400;
-    position: absolute;
-    top: 25px;
-    right: 0;
-  }
-
   .promo__title {
     text-align: center;
     font-size: 43px;
     line-height: 50px;
   }
+}
+
+@media (min-width: $desktop-width) {
+
 }

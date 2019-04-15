@@ -7,6 +7,14 @@
   background-color: $color-white;
 }
 
+.main-header__text{
+  display: none;
+}
+
+.main-header__link-group {
+  display: none;
+}
+
 .main-header__btn {
   width: 20px;
   height: 21px;
@@ -40,7 +48,36 @@
 
   }
 
+  .main-header__text{
+    @include ma-pa-reset;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    position: absolute;
+    top: 110px;
+    right: 50px;
+  }
+
   .main-header__btn {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__link-group {
+    display: block;
+    position: absolute;
+    top: 110px;
+    left: 50px;
+  }
+
+  .main-header__link {
+    @include link-reset;
+    font-size: 15px;
+    color: $color-black;
+
+    &--arrival {
+      margin-right: 60px;
+    }
   }
 }

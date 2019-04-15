@@ -42,6 +42,7 @@
 
 .goods__desc {
   @include ma-pa-reset;
+  min-height: 72px;/*____________________*/
   padding-right: 11px;
   margin-bottom: 12px;
   font-size: 15px;
@@ -200,4 +201,8 @@ tr:nth-child(3) td.goods__value {
     width: 333px;
     height: 404px;
   }
+}
+
+@media (min-width: $desktop-width) {
+
 }

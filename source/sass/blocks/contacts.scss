@@ -69,3 +69,32 @@
 .contacts__link {
   width: 100%;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 46px;
+      right: 50px;
+      width: 47px;
+      height: 81px;
+      background-image: url("../../img/icon-flag.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .contacts__list {
+    @include display-flex-start;
+    margin-bottom: 0;
+  }
+
+  .contacts__link {
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
