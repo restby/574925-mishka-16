@@ -1,1 +1,37 @@
-//
+.textarea {
+  margin-bottom: 15px;
+}
+
+.textarea__title {
+  margin-bottom: 24px;
+
+  &::after {
+    margin-left: 25px;
+  }
+}
+
+.textarea__field {
+  @include ma-pa-reset;
+  width: 100%;
+  min-height: 142px;
+  border: 2px solid $color-text;
+  background-color: $color-white;
+  padding: 14px 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-text;
+
+  &:placeholder {
+    line-height: 18px;
+    font-weight: 400;
+    color: rgba($color-text, 0.3);
+  }
+
+  &:hover {
+    border: 2px solid $color-green;
+  }
+
+  &:focus {
+    border: 2px solid $color-green-alternative;
+  }
+}

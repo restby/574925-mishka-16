@@ -1,15 +1,50 @@
-// .personal {
-//
-// }
+.personal__title {
+  margin-bottom: 30px;
 
-// .personal__title {
-//
-// }
+  &::after {
+    margin-left: 20px;
+  }
+}
 
 .personal__list {
   @include list-reset;
+  margin-bottom: 34px;
 }
 
-// .personal__item {
-//
-// }
+.personal__item {
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.personal__input-label {
+  padding-left: 0;
+}
+
+.personal__input {
+  width: 100%;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border: none;
+  box-shadow: 0 2px 0 0 $color-black;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-text;
+
+  &:placeholder {
+    line-height: 18px;
+    font-weight: 400;
+    color: rgba($color-text, 0.3);
+  }
+
+  &:hover {
+    box-shadow: 0 2px 0 0 $color-green;
+  }
+
+  &:focus {
+    box-shadow: 0 2px 0 0 $color-green-alternative;
+  }
+}

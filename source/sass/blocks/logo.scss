@@ -2,7 +2,9 @@
   display: block;
   width: 86px;
   height: 35px;
+}
 
+a.logo[href] {
   &:hover {
     opacity: 0.6;
   }
@@ -15,7 +17,7 @@
 .logo--main-header {
   margin-top: 22px;
   margin-bottom: 22px;
-  margin-left: 86px;
+  margin-left: 116px;
   margin-right: auto;
 }
 
@@ -24,6 +26,61 @@
   height: 35px;
 }
 
-// .logo__img--main-header {
-//
-// }
+.logo--main-footer {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    position: absolute;
+    top: 22px;
+    left: 50px;
+    width: 112px;
+    height: 46px;
+  }
+
+  .logo--main-header {
+    margin: 0;
+  }
+
+  .logo__img {
+    width: 112px;
+    height: 46px;
+  }
+
+  .logo--main-footer {
+    display: block;
+    margin-right: 124px;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 102px;
+    height: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 149px;
+    height: 72px;
+  }
+
+  .logo__img {
+    width: 149px;
+    height: 72px;
+  }
+
+  .logo--main-footer {
+    margin-right: 315px;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 102px;
+    height: 34px;
+    transform: translateX(0);
+  }
+}

@@ -2,12 +2,35 @@
   @include link-reset;
   display: block;
   background-color: $color-white;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  padding-left: 0;
+  padding-right: 0;
   border: 2px solid $color-text;
+  font-size: 17px;
   line-height: 20px;
   color: $color-text;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-text;
+    border: 2px solid $color-text;
+    color: $color-white;
+  }
+
+  &:active {
+    background-color: $color-text;
+    border: 2px solid $color-text;
+    color: rgba($color-white, 0.3);
+  }
 }
+
+// @media (min-width: $tablet-width) {
+
+// }
+
+// @media (min-width: $desktop-width) {
+
+// }

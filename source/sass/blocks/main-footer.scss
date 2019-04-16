@@ -1,3 +1,17 @@
 .main-footer {
   background-color: $color-white-dark;
 }
+
+@media (min-width: $tablet-width) {
+  .main-footer .container {
+    @include display-flex-start;
+    padding-top: 51px;
+    padding-bottom: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer .container {
+    position: relative;
+  }
+}

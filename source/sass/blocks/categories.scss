@@ -1,7 +1,3 @@
-// .categories {
-//
-// }
-
 .categories__list {
   @include list-reset;
 }
@@ -10,24 +6,52 @@
   background-color: $color-green;
 }
 
-.categories__item:last-child {
+.categories__item--toys {
   background-color: $color-green-alternative;
 }
 
 .categories__link {
   @include link-reset;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 26px;
+  padding-bottom: 29px;
   padding-left: 30px;
   padding-right: 30px;
   display: block;
+  position: relative;
 
-  // &:hover {
-  //
-  // }
+  &::after {
+    position: absolute;
+    content: "";
+    opacity: 0.5;
+  }
 
-  &:active .categories__item-title {
-    opacity: 0.3;
+  &:hover::after {
+    opacity: 0.7;
+  }
+}
+
+.categories__link:active .categories__item-title,
+.categories__link:active::after {
+  opacity: 0.3;
+}
+
+.categories__link--interior {
+  &::after {
+    top: 23px;
+    right: 36px;
+    width: 40px;
+    height: 62px;
+    background-image: url("../../img/icon-interior.svg");
+  }
+}
+
+.categories__link--toys {
+  &::after {
+    top: 21px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../img/icon-toy.svg");
   }
 }
 
@@ -36,4 +60,62 @@
   width: 110px;
   font-size: 19px;
   color: $color-white;
+}
+
+@media (min-width: $tablet-width) {
+  .categories {
+    margin-top: -115px;
+  }
+
+  .categories__list {
+    @include display-flex-start;
+    margin-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+  }
+
+  .categories__item {
+    width: 50%;
+  }
+
+  .categories__link {
+    padding-top: 26px;
+    padding-bottom: 36px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .categories__link--interior {
+    &::after {
+      top: 29px;
+      right: 36px;
+      width: 40px;
+      height: 62px;
+      background-image: url("../../img/icon-interior.svg");
+    }
+  }
+
+  .categories__link--toys {
+    &::after {
+      top: 30px;
+      right: 34px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../../img/icon-toy.svg");
+    }
+  }
+
+  .categories__item-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories {
+    margin-top: -130px;
+    max-width: $desktop-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

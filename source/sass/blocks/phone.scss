@@ -1,1 +1,61 @@
-//
+.phone {
+  margin-bottom: 34px;
+  position: relative;
+}
+
+.phone__title {
+  margin-bottom: 9px;
+
+  &::after {
+    margin-left: 31px;
+  }
+}
+
+.phone__label {
+  position: absolute;
+  content: "";
+  top: 11px;
+  right: 8px;
+}
+
+.phone__label svg {
+  width: 25px;
+  height: 24px;
+  opacity: 0.2;
+}
+
+.phone__input:hover + .phone__label svg {
+  opacity: 1;
+  fill: $color-green;
+}
+
+.phone__input:focus + .phone__label svg {
+  opacity: 1;
+  fill: $color-green-alternative;
+}
+
+.phone__input {
+  width: 100%;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border: none;
+  box-shadow: 0 2px 0 0 $color-black;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-text;
+
+  &:placeholder {
+    line-height: 18px;
+    font-weight: 400;
+    color: rgba($color-text, 0.3);
+  }
+
+  &:hover {
+    box-shadow: 0 2px 0 0 $color-green;
+  }
+
+  &:focus {
+    box-shadow: 0 2px 0 0 $color-green-alternative;
+  }
+}

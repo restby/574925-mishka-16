@@ -12,6 +12,18 @@
 .galery__item {
   margin-bottom: 30px;
   border: 1px solid $color-grey;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba($color-black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba($color-black, 0.1);
+  }
 }
 
 // .galery__item-wrapper {
@@ -20,25 +32,37 @@
 
 .galery__link {
   @include link-reset;
+  display: block;
+  margin-bottom: 5px;
+
+  &:hover .galery__item-title {
+    color: rgba($color-black, 0.6);
+  }
+
+  &:active .galery__item-title {
+    color: rgba($color-black, 0.3);
+  }
 }
 
 .galery__img {
+  display: block;
   width: 260px;
   height: 195px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .galery__item-title {
   @include ma-pa-reset;
-  margin-bottom: 15px;
   color: $color-black;
   padding-left: 27px;
 }
 
 .galery__item-desc {
   @include ma-pa-reset;
-  margin-bottom: 25px;
-  padding-bottom: 25px;
+  margin-bottom: 21px;
+  padding-bottom: 19px;
   margin-left: 27px;
   margin-right: 27px;
   border-bottom: 1px solid $color-grey;
@@ -59,13 +83,29 @@
   margin-right: auto;
   font-size: 15px;
   color: $color-black;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .galery__btn {
   display: block;
   width: 20px;
   height: 19px;
-  background-color: $color-black;
+  padding: 0;
+  background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  & svg {
+    opacity: 0.2;
+  }
+
+  &:hover svg {
+    fill: $color-green;
+    opacity: 1;
+  }
+
+  &:active svg {
+    fill: $color-green;
+    opacity: 0.3;
+  }
 }
