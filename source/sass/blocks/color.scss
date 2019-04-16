@@ -79,14 +79,14 @@
 }
 
 .color__input-checkbox:disabled:checked ~ .color__input-label::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 36px;
-    height: 36px;
-    border: 2px solid rgba($color-text, 0.3);
-    background-color: $color-white;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 2px solid rgba($color-text, 0.3);
+  background-color: $color-white;
 }
 
 .color__input-checkbox:disabled:checked ~ .color__input-label::after {

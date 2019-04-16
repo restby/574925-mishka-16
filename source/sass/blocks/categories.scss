@@ -12,7 +12,6 @@
 
 .categories__link {
   @include link-reset;
-  position: relative;
   padding-top: 26px;
   padding-bottom: 29px;
   padding-left: 30px;
@@ -72,7 +71,7 @@
     @include display-flex-start;
     margin-left: 50px;
     padding-right: 50px;
-    justify-content: center
+    justify-content: center;
   }
 
   .categories__item {

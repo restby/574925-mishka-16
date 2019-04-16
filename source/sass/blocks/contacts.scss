@@ -117,8 +117,8 @@
   }
 
   .contacts__item {
-    width: 50%;
     @include display-flex-start;
+    width: 50%;
   }
 
   .contacts__info {
@@ -187,8 +187,8 @@
 
 
   .contacts__item {
-    width: auto;
     @include display-flex-start;
+    width: auto;
 
     &:first-child {
       margin-bottom: 29px;

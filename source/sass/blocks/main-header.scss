@@ -7,7 +7,7 @@
   background-color: $color-white;
 }
 
-.main-header__text{
+.main-header__text {
   display: none;
 }
 
@@ -44,11 +44,7 @@
     }
   }
 
-  .main-header__bar {
-
-  }
-
-  .main-header__text{
+  .main-header__text {
     @include ma-pa-reset;
     display: block;
     font-size: 15px;

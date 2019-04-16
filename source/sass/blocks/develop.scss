@@ -9,12 +9,12 @@
   @include display-flex-start;
   justify-content: center;
 
-  &:active .develop__text{
+  &:active .develop__text {
     opacity: 0.3;
   }
 
   &:hover svg {
-    fill: $color-green-alternative;;
+    fill: $color-green-alternative;
   }
 
   &:active svg {
