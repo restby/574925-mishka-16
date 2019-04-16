@@ -193,5 +193,50 @@ tr:nth-child(3) td.goods__value {
 }
 
 @media (min-width: $desktop-width) {
+  .goods .container {
+    position: relative;
+  }
 
+  .goods__title {
+    order: 4;
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 0;
+    position: absolute;
+    top: 20px;
+    left: 225px;
+    z-index: 2;
+  }
+
+  .goods__subtitle {
+    order: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 58px;
+    margin-left: 47px;
+  }
+
+  .goods__col {
+    &--left {
+      order: 2;
+      width: 350px;
+      padding-right: 0;
+      margin-top: 150px;
+    }
+
+    &--right {
+      order: 3;
+      width: auto;
+      padding-top: 0;
+    }
+  }
+
+  .goods__link {
+    width: 292px;
+  }
+
+  .goods__img {
+    width: 525px;
+    height: 636px;
+  }
 }

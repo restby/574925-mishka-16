@@ -135,6 +135,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .navigation {
+    max-width: $desktop-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navigation__list {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
   .navigation__item {
     &--catalog {
@@ -150,6 +160,16 @@
       padding-top: 35px;
       padding-left: 35px;
       transform: translateY(0);
+    }
+  }
+
+  .navigation__link {
+    &--catalog {
+      font-size: 17px;
+    }
+
+    &--form {
+      font-size: 17px;
     }
   }
 }

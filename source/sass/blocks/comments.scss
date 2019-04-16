@@ -163,3 +163,28 @@
     width: 175px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .comments {
+    background-image: none;
+
+    &::after {
+      height: 15px;
+    }
+  }
+
+  .comments .container {
+    position: relative;
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50px 0;
+  }
+
+  .comments__title {
+    margin-left: 175px;
+  }
+
+  .comments__slider {
+    margin-left: 175px;
+  }
+}
