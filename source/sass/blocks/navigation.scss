@@ -139,9 +139,6 @@
     max-width: $desktop-width;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .navigation__list {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -150,15 +147,16 @@
     &--catalog {
       border-right: 1px solid $color-grey;
       margin-right: 0;
-      padding-top: 35px;
-      padding-right: 35px;
+      padding-top: 30px;
+      padding-right: 36px;
       transform: translateY(0);
     }
 
     &--form {
+      width: 256px;
       margin-right: auto;
-      padding-top: 35px;
-      padding-left: 35px;
+      padding-top: 30px;
+      padding-left: 34px;
       transform: translateY(0);
     }
   }
@@ -170,6 +168,20 @@
 
     &--form {
       font-size: 17px;
+    }
+
+    &--search svg {
+      position: absolute;
+      top: 37px;
+      left: 29px;
+      opacity: 0.2;
+    }
+
+    &--cart svg {
+      position: absolute;
+      top: 35px;
+      left: 29px;
+      opacity: 0.2;
     }
   }
 }

@@ -43,17 +43,19 @@ a.logo[href] {
     margin: 0;
   }
 
-  .logo--main-footer {
-    display: block;
-    margin-right: 114px;
-    position: static;
-    top: 0;
-    left: 0;
-  }
-
   .logo__img {
     width: 112px;
     height: 46px;
+  }
+
+  .logo--main-footer {
+    display: block;
+    margin-right: 124px;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 102px;
+    height: 34px;
   }
 }
 
@@ -63,5 +65,22 @@ a.logo[href] {
     top: 9px;
     left: 50%;
     transform: translateX(-50%);
+    width: 149px;
+    height: 72px;
+  }
+
+  .logo__img {
+    width: 149px;
+    height: 72px;
+  }
+
+  .logo--main-footer {
+    margin-right: 315px;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 102px;
+    height: 34px;
+    transform: translateX(0);
   }
 }

@@ -206,6 +206,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .about {
+    padding-top: 61px;
+    padding-bottom: 13px;
+  }
+
   .about__list {
     margin-left: 175px;
   }

@@ -98,7 +98,9 @@ tr:nth-child(3) td.goods__value {
 }
 
 .goods__link {
-  width: 100%;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -193,6 +195,15 @@ tr:nth-child(3) td.goods__value {
 }
 
 @media (min-width: $desktop-width) {
+  .goods {
+    padding-top: 68px;
+    padding-bottom: 95px;
+
+    &::after {
+      height: 23px;
+    }
+  }
+
   .goods .container {
     position: relative;
   }
@@ -203,15 +214,15 @@ tr:nth-child(3) td.goods__value {
     margin-bottom: 0;
     margin-right: 0;
     position: absolute;
-    top: 20px;
-    left: 225px;
+    top: 52px;
+    left: 220px;
     z-index: 2;
   }
 
   .goods__subtitle {
     order: 1;
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 68px;
     margin-right: 58px;
     margin-left: 47px;
   }
@@ -221,7 +232,7 @@ tr:nth-child(3) td.goods__value {
       order: 2;
       width: 350px;
       padding-right: 0;
-      margin-top: 150px;
+      margin-top: 157px;
     }
 
     &--right {
@@ -231,8 +242,25 @@ tr:nth-child(3) td.goods__value {
     }
   }
 
+  .goods__desc {
+    margin-bottom: 56px;
+    padding-right: 54px;
+  }
+
+  .goods__table {
+    margin-bottom: 105px;
+  }
+
+  .goods__price {
+    text-align: left;
+    padding-left: 72px;
+    margin-bottom: 35px;
+    font-size: 20px;
+  }
+
   .goods__link {
     width: 292px;
+    margin: 0;
   }
 
   .goods__img {

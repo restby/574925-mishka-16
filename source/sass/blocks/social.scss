@@ -45,3 +45,9 @@
     margin-top: 8px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin-right: 234px;
+  }
+}
