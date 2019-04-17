@@ -2,20 +2,17 @@
   padding-top: 36px;
   padding-bottom: 39px;
   background-color: $color-white;
+  position: relative;
 }
 
 .contacts__title {
   margin-bottom: 26px;
-  margin-left: 30px;
-  margin-right: 30px;
   font-size: 18px;
 }
 
 .contacts__list {
   @include list-reset;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 37px;
+  margin-bottom: 532px;
 }
 
 .contacts__item:first-child {
@@ -38,7 +35,9 @@
   @include link-reset;
   border-bottom: 1px solid $color-green;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     color: $color-green-alternative;
   }
 
@@ -60,7 +59,12 @@
 }
 
 .contacts__map {
-  margin-bottom: 39px;
+  position: absolute;
+  top: 308px;
+  left: 50%;
+  width: 320px;
+  height: 457px;
+  transform: translateX(-50%);
 }
 
 .contacts__img {
@@ -84,32 +88,32 @@
     padding-bottom: 57px;
     position: relative;
 
-    &::before {
-      position: absolute;
-      content: "";
-      top: 47px;
-      right: 53px;
-      width: 47px;
-      height: 81px;
-      background-image: url("../../img/icon-flag.svg");
-      background-position: 0 0;
-      background-repeat: no-repeat;
+    & .container {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 47px;
+        right: 53px;
+        width: 47px;
+        height: 81px;
+        background-image: url("../../img/icon-flag.svg");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+      }
     }
   }
 
   .contacts__title {
     margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .contacts__list {
     @include display-flex-start;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 56px;
+    margin-bottom: 575px;
   }
 
   .contacts__item:first-child {

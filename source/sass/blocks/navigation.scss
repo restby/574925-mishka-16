@@ -27,8 +27,9 @@
   border-bottom: 1px solid $color-grey;
   color: $color-black;
 
-  &:hover {
+  &:hover, &:focus {
     color: rgba($color-black, 0.6);
+    outline: none;
   }
 
   &:active {
@@ -61,11 +62,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .navigation {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
   .navigation__list {
     flex-direction: row;
   }

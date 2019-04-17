@@ -1,5 +1,8 @@
 .main-header {
   background-color: $color-white;
+  & .container {
+    width: 320px;
+  }
 }
 
 .main-header__bar {
@@ -42,6 +45,19 @@
       background-repeat: repeat-x;
       background-position: 0 0;
     }
+
+    & .container {
+      width: 660px;
+      position: relative;
+    }
+  }
+
+  .main-header__bar {
+    width: 112px;
+    height: 46px;
+    position: absolute;
+    top: 22px;
+    left: 50px;
   }
 
   .main-header__text {
@@ -60,6 +76,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-header {
+    & .container {
+      width: $desktop-width;
+    }
+  }
+
   .main-header__link-group {
     display: block;
     position: absolute;

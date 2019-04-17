@@ -15,6 +15,10 @@
     background-repeat: repeat-x;
     background-position: 0 0;
   }
+
+  & .container {
+    position: relative;
+  }
 }
 
 .comments__title {
@@ -87,11 +91,15 @@
     content: "";
     width: 50px;
     height: 26px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% -50%);
+    top: 13px;
+    left: 38px;
     background-position: 0 0;
     background-repeat: no-repeat;
+  }
+
+  &:focus {
+    opacity: 0.6;
+    outline: 1px dotted $color-black;
   }
 
   &:hover::before {

@@ -23,12 +23,17 @@
   }
 }
 
-.social__link svg {
-  &:hover {
+.social__link:hover,
+.social__link:focus {
+  outline: none;
+
+  & svg {
     fill: $color-green-alternative;
   }
+}
 
-  &:active {
+.social__link:active {
+  & svg {
     fill: $color-green-alternative;
     opacity: 0.3;
   }
