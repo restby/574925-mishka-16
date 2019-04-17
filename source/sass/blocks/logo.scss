@@ -45,9 +45,6 @@ a.logo[href] {
   .logo--main-footer {
     display: block;
     margin-right: 124px;
-    position: static;
-    top: 0;
-    left: 0;
     width: 102px;
     height: 34px;
   }
@@ -55,10 +52,6 @@ a.logo[href] {
 
 @media (min-width: $desktop-width) {
   .logo {
-    position: absolute;
-    top: 9px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 149px;
     height: 72px;
   }
@@ -70,6 +63,7 @@ a.logo[href] {
 
   .logo--main-footer {
     margin-right: 315px;
+    margin-left: 50px;
     position: static;
     top: 0;
     left: 0;

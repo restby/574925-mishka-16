@@ -86,7 +86,6 @@
   .contacts {
     padding-top: 61px;
     padding-bottom: 57px;
-    position: relative;
 
     & .container {
       position: relative;
@@ -94,8 +93,8 @@
       &::before {
         position: absolute;
         content: "";
-        top: 47px;
-        right: 53px;
+        top: -14px;
+        right: 3px;
         width: 47px;
         height: 81px;
         background-image: url("../../img/icon-flag.svg");
@@ -113,7 +112,7 @@
 
   .contacts__list {
     @include display-flex-start;
-    margin-bottom: 575px;
+    margin-bottom: 567px;
   }
 
   .contacts__item:first-child {
@@ -159,19 +158,12 @@
   .contacts {
     padding-top: 141px;
     padding-bottom: 105px;
-    position: relative;
 
-    &::before {
-      position: absolute;
-      content: "";
-      top: 133px;
-      right: 0;
-      left: 113px;
-      width: 47px;
-      height: 81px;
-      background-image: url("../../img/icon-flag.svg");
-      background-position: 0 0;
-      background-repeat: no-repeat;
+    & .container {
+      &::before {
+        top: -8px;
+        left: 113px;
+      }
     }
   }
 
@@ -215,8 +207,11 @@
   .contacts__map {
     // display: none;
     position: absolute;
-    top: 70px;
-    right: 50px;
+    top: 72px;
+    right: 0;
+    transform: translateX(0);
+    width: 525px;
+    height: 457px;
     margin-bottom: 0;
   }
 

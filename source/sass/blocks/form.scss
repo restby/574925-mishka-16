@@ -58,3 +58,11 @@
 .form__btn {
   width: 100%;
 }
+
+
+@media (min-width: $tablet-width) {
+  .form {
+    position: relative;
+    z-index: 2;
+  }
+}

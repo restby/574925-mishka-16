@@ -113,6 +113,8 @@
     padding-right: 0;
     padding-top: 75px;
     padding-bottom: 53px;
+    position: relative;
+    z-index: 2;
   }
 
   .galery__list {
@@ -122,10 +124,18 @@
 
   .galery__item {
     width: 100%;
-    padding-left: 376px;
+    padding-left: 360px;
     padding-right: 33px;
     margin-bottom: 54px;
     position: relative;
+
+    &:nth-child(3) .galery__item-title {
+      padding-right: 34px;
+    }
+
+    &:nth-child(3) .galery__item-desc {
+      padding-bottom: 151px;
+    }
   }
 
   .galery__link {
@@ -146,15 +156,15 @@
 
   .galery__item-title {
     padding-left: 0;
-    margin-top: 27px;
+    margin-top: 24px;
     font-size: 20px;
   }
 
   .galery__item-desc {
-    padding-bottom: 182px;
+    padding-bottom: 175px;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 20px;
+    margin-top: 6px;
     font-size: 15px;
   }
 
@@ -165,7 +175,8 @@
 
   .galery__price {
     font-size: 17px;
-    margin-bottom: 4px;
+    margin-bottom: 27px;
+    padding-left: 5px;
   }
 }
 
