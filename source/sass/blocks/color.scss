@@ -99,3 +99,21 @@
   background-image: url("../../img/icon-tick.svg");
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .color {
+    background-color: $color-white-dark;
+    .container {
+      @include display-flex-start;
+    }
+  }
+
+  .color__title {
+    width: 175px;
+    margin-bottom: 0;
+
+    &::after {
+      margin-left: 0;
+    }
+  }
+}

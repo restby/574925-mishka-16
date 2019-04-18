@@ -99,7 +99,7 @@
 
 @media (min-width: $tablet-width) {
   .production {
-    padding-bottom: 108px;
+    padding-bottom: 62px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -167,23 +167,23 @@
   .production .container {
     width: 1050px;
     padding-bottom: 0;
-    padding-left: 762px;
+    padding-left: 759px;
     flex-direction: column;
     position: relative;
   }
 
   .production__item-title {
     order: 2;
-    margin-bottom: 42px;
+    margin-bottom: 34px;
     margin-top: 0;
-    padding-top: 96px;
+    padding-top: 95px;
     padding-left: 0;
-    padding-right: 47px;
+    padding-right: 52px;
     position: relative;
 
     &::before {
-      top: 47px;
-      left: 0;
+      top: 42px;
+      left: 2px;
       right: 255px;
       width: 32px;
       height: 32px;
@@ -194,7 +194,7 @@
     order: 3;
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 35px;
+    margin-bottom: 46px;
   }
 
 

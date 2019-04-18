@@ -90,6 +90,10 @@
     & .container {
       width: $desktop-width;
     }
+
+    &::after {
+      height: 34px;
+    }
   }
 
   .main-header__bar {

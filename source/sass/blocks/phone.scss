@@ -1,6 +1,10 @@
 .phone {
   margin-bottom: 34px;
   position: relative;
+
+  .container {
+    position: relative;
+  }
 }
 
 .phone__title {
@@ -14,7 +18,7 @@
 .phone__label {
   position: absolute;
   content: "";
-  top: 11px;
+  top: 35px;
   right: 8px;
 }
 

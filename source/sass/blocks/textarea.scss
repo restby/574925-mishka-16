@@ -35,3 +35,10 @@
     border: 2px solid $color-green-alternative;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .textarea {
+    margin-bottom: 53px;
+  }
+
+}
