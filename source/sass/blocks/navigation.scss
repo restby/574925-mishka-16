@@ -36,7 +36,8 @@
     color: rgba($color-black, 0.3);
   }
 
-  &:hover svg {
+  &:hover svg,
+  &:focus svg {
     opacity: 1;
     fill: $color-green;
   }

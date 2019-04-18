@@ -69,8 +69,10 @@
   background-repeat: no-repeat;
   transition: all 0.2s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: translate(-50%, -50%) scale(1.2);
+    outline: none;
   }
 
   &:active {
@@ -103,7 +105,7 @@
   }
 
   .production .container {
-    padding-bottom: 0;
+    padding-bottom: 46px;
     @include display-flex-start;
     flex-wrap: wrap;
   }
@@ -140,31 +142,6 @@
     height: 455px;
   }
 
-  .production__btn {
-    width: 101px;
-    height: 77px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url("../../img/icon-play.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    transition: all 0.2s;
-
-    &:hover {
-      transform: translate(-50%, -50%) scale(1.2);
-    }
-
-    &:active {
-      opacity: 0.3;
-      transform: translate(-50%, -50%) scale(0.8);
-    }
-  }
-
   .production__item-desc {
     order: 3;
     padding-left: 39px;
@@ -179,5 +156,63 @@
     width: 584px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production {
+    padding-bottom: 105px;
+  }
+
+  .production .container {
+    width: 1050px;
+    padding-bottom: 0;
+    padding-left: 762px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .production__item-title {
+    order: 2;
+    margin-bottom: 42px;
+    margin-top: 0;
+    padding-top: 96px;
+    padding-left: 0;
+    padding-right: 47px;
+    position: relative;
+
+    &::before {
+      top: 47px;
+      left: 0;
+      right: 255px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .production__item-desc {
+    order: 3;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 35px;
+  }
+
+
+  .production__media {
+    order: 1;
+    width: 682px;
+    height: 455px;
+    margin-bottom: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .production__link {
+    order: 4;
+    width: 230px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 60px;
   }
 }

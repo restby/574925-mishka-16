@@ -114,6 +114,16 @@
     &--arrival {
       margin-right: 56px;
     }
+
+    &:focus,
+    &:hover {
+      opacity: 0.6;
+      outline: none;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-header__text {
