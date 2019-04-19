@@ -129,12 +129,14 @@
     padding-bottom: 101px;
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 66px 0;
+    background-position: 0 0;
 
     &::after {
       height: 15px;
     }
   }
+
+  /* КОСЯК фона на планшете*/
 
   .comments__title {
     margin-bottom: 48px;
