@@ -49,12 +49,102 @@
 
 .form__label {
   display: block;
-  padding-left: 62px;
-  line-height: 18px;
   color: $color-black;
   position: relative;
+  font-size: 17px;
+  line-height: 18px;
+  cursor: pointer;
 }
 
 .form__btn {
   width: 100%;
+}
+
+
+@media (min-width: $tablet-width) {
+  .form {
+    @include display-flex-start;
+    padding-top: 67px;
+    padding-bottom: 51px;
+    position: relative;
+    z-index: 2;
+    flex-wrap: wrap;
+
+    .container {
+      &--text {
+        @include display-flex-start;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .form__slogan {
+    padding-right: 0;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__fieldset {
+    width: 100%;
+  }
+
+  .fieldset-legend {
+    &::after {
+      display: none;
+    }
+  }
+
+  .form__text {
+    order: 2;
+    width: 50%;
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: right;
+  }
+
+  .form__label {
+    font-size: 19px;
+  }
+
+  .form__btn {
+    order: 1;
+    width: 230px;
+    line-height: 17px;
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding-top: 116px;
+    padding-bottom: 50px;
+
+    .container {
+      padding-left: 50px;
+      padding-right: 50px;
+
+      &--text {
+        padding-left: 225px;
+        padding-right: 225px;
+      }
+    }
+  }
+
+  .form__slogan {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form__text {
+    margin-top: 8px;
+  }
+
+  .form__btn {
+    width: 230px;
+    padding-top: 15px;
+  }
 }

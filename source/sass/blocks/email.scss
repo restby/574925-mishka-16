@@ -1,6 +1,10 @@
 .email {
   margin-bottom: 34px;
   position: relative;
+
+  .container {
+    position: relative;
+  }
 }
 
 .email__title {
@@ -14,7 +18,7 @@
 .email__label {
   position: absolute;
   content: "";
-  top: 16px;
+  top: 33px;
   right: 4px;
 }
 
@@ -57,5 +61,73 @@
 
   &:focus {
     box-shadow: 0 2px 0 0 $color-green-alternative;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .email {
+    background-color: $color-white-dark;
+    margin-bottom: 0;
+    padding-top: 1px;
+    padding-bottom: 52px;
+
+    & .container {
+      @include display-flex-start;
+      position: relative;
+      justify-content: space-between;
+    }
+  }
+
+  .email__title {
+    width: 167px;
+    margin-bottom: 0;
+    margin-top: 17px;
+  }
+
+  .email__label {
+    position: absolute;
+    content: "";
+    top: 12px;
+    right: 22px;
+  }
+
+  .email__input {
+    width: 501px;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: $color-white-dark;
+    font-size: 19px;
+
+    &:placeholder {
+      line-height: 18px;
+      font-size: 19px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .email {
+    & .container {
+      justify-content: flex-start;
+    }
+  }
+
+  .email__title {
+    text-align: center;
+  }
+
+  .email__label {
+    position: absolute;
+    content: "";
+    top: 12px;
+    right: 229px;
+  }
+
+  .email__input {
+    width: 700px;
+    margin-left: 9px;
   }
 }

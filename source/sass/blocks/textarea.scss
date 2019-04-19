@@ -35,3 +35,53 @@
     border: 2px solid $color-green-alternative;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .textarea {
+    padding-top: 50px;
+    padding-bottom: 53px;
+    margin-bottom: 0;
+
+    & .container {
+      @include display-flex-start;
+      justify-content: space-between;
+    }
+  }
+
+  .textarea__title {
+    width: 167px;
+    margin-top: 17px;
+    margin-bottom: 24px;
+  }
+
+  .textarea__field {
+    width: 501px;
+    min-height: 142px;
+    padding: 14px 14px;
+    font-size: 19px;
+
+    &:placeholder {
+      font-size: 19px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea {
+    padding-bottom: 49px;
+
+    & .container {
+      @include display-flex-start;
+      justify-content: flex-start;
+    }
+  }
+
+  .textarea__title {
+    text-align: center;
+  }
+
+  .textarea__field {
+    width: 700px;
+    margin-left: 9px;
+  }
+}

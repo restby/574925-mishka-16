@@ -1,5 +1,9 @@
 .main-header {
   background-color: $color-white;
+
+  & .container {
+    width: 320px;
+  }
 }
 
 .main-header__bar {
@@ -30,6 +34,19 @@
   .main-header {
     position: relative;
 
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 88px;
+      background-color: $color-white-dark;
+    }
+
+    &--index::before {
+      background-color: #f9f9f9;
+    }
+
     &::after {
       position: absolute;
       content: "";
@@ -42,6 +59,16 @@
       background-repeat: repeat-x;
       background-position: 0 0;
     }
+
+    & .container {
+      width: 668px;
+      position: relative;
+    }
+  }
+
+  .main-header__bar {
+    position: absolute;
+    top: 22px;
   }
 
   .main-header__text {
@@ -51,7 +78,7 @@
     font-weight: 400;
     position: absolute;
     top: 106px;
-    right: 50px;
+    right: 0;
   }
 
   .main-header__btn {
@@ -60,6 +87,23 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-header {
+    & .container {
+      width: $desktop-width;
+    }
+
+    &::after {
+      height: 34px;
+    }
+  }
+
+  .main-header__bar {
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .main-header__link-group {
     display: block;
     position: absolute;
@@ -75,5 +119,19 @@
     &--arrival {
       margin-right: 56px;
     }
+
+    &:focus,
+    &:hover {
+      opacity: 0.6;
+      outline: none;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .main-header__text {
+    right: 50px;
   }
 }

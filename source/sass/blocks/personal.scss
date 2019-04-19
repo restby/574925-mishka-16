@@ -1,3 +1,7 @@
+.personal {
+  padding-bottom: 34px;
+}
+
 .personal__title {
   margin-bottom: 30px;
 
@@ -8,7 +12,6 @@
 
 .personal__list {
   @include list-reset;
-  margin-bottom: 34px;
 }
 
 .personal__item {
@@ -46,5 +49,69 @@
 
   &:focus {
     box-shadow: 0 2px 0 0 $color-green-alternative;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .personal {
+    padding-top: 65px;
+    padding-bottom: 34px;
+
+    & .container {
+      @include display-flex-start;
+      justify-content: space-between;
+    }
+  }
+
+  .personal__title {
+    width: 167px;
+    margin-top: 2px;
+    margin-bottom: 0;
+  }
+
+  .personal__list {
+    width: 501px;
+  }
+
+  .personal__item {
+    @include display-flex-start;
+    margin-bottom: 24px;
+    min-height: 52px;
+  }
+
+  .personal__input-label {
+    padding-left: 0;
+    padding-top: 0;
+    margin-right: 25px;
+  }
+
+  .personal__input {
+    padding: 0;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 19px;
+
+    &:placeholder {
+      font-size: 19px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .personal {
+    & .container {
+      @include display-flex-start;
+      justify-content: flex-start;
+    }
+  }
+
+  .personal__title {
+    text-align: center;
+  }
+
+  .personal__list {
+    width: 708px;
+    padding-left: 9px;
   }
 }

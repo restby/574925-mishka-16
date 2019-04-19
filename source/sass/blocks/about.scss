@@ -13,7 +13,7 @@
   position: relative;
 
   &:nth-child(1) {
-    padding-right: 90px;
+    padding-right: 86px;
 
     &::before {
       position: absolute;
@@ -29,7 +29,7 @@
   }
 
   &:nth-child(2) {
-    padding-right: 63px;
+    padding-right: 61px;
     padding-top: 82px;
 
     &::before {
@@ -46,7 +46,7 @@
   }
 
   &:nth-child(3) {
-    padding-right: 82px;
+    padding-right: 80px;
     padding-top: 82px;
 
     &::before {
@@ -136,7 +136,7 @@
 
     &:nth-child(1) {
       order: 1;
-      padding-right: 131px;
+      padding-right: 130px;
 
       &::before {
         top: 50px;
@@ -147,7 +147,7 @@
     &:nth-child(2) {
       order: 3;
       padding-top: 112px;
-      padding-right: 104px;
+      padding-right: 100px;
 
       &::before {
         top: 60px;
@@ -158,7 +158,7 @@
     &:nth-child(3) {
       order: 5;
       padding-top: 110px;
-      padding-right: 124px;
+      padding-right: 122px;
 
       &::before {
         top: 62px;
@@ -212,11 +212,11 @@
   }
 
   .about__list {
-    margin-left: 175px;
+    margin-left: 225px;
   }
 
   .about__title {
-    margin-left: 175px;
+    margin-left: 220px;
   }
 
   .about__item {

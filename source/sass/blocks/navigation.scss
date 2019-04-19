@@ -27,15 +27,18 @@
   border-bottom: 1px solid $color-grey;
   color: $color-black;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba($color-black, 0.6);
+    outline: none;
   }
 
   &:active {
     color: rgba($color-black, 0.3);
   }
 
-  &:hover svg {
+  &:hover svg,
+  &:focus svg {
     opacity: 1;
     fill: $color-green;
   }
@@ -61,11 +64,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .navigation {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
   .navigation__list {
     flex-direction: row;
   }

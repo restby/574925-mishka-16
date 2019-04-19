@@ -13,8 +13,13 @@
     opacity: 0.3;
   }
 
-  &:hover svg {
-    fill: $color-green-alternative;
+  &:hover,
+  &:focus {
+    outline: none;
+
+    & svg {
+      fill: $color-green-alternative;
+    }
   }
 
   &:active svg {

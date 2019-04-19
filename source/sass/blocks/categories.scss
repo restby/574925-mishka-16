@@ -25,8 +25,13 @@
     opacity: 0.5;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     opacity: 0.7;
+  }
+
+  &:focus {
+    outline: 1px dotted $color-black;
   }
 }
 
@@ -69,8 +74,6 @@
 
   .categories__list {
     @include display-flex-start;
-    margin-left: 50px;
-    padding-right: 50px;
     justify-content: center;
   }
 
@@ -115,6 +118,8 @@
   .categories {
     margin-top: -130px;
     max-width: $desktop-width;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-left: auto;
     margin-right: auto;
   }

@@ -14,10 +14,12 @@
   text-transform: uppercase;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-text;
     border: 2px solid $color-text;
     color: $color-white;
+    outline: none;
   }
 
   &:active {
