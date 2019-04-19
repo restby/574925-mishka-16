@@ -121,20 +121,22 @@
   }
 
   .type__input-label {
-    padding-top: 10px;
-    min-height: 38px;
+    padding-top: 15px;
+    padding-left: 79px;
+    min-height: 52px;
 
     &::before {
       top: 0;
       left: 0;
-      width: 51px;
-      height: 51px;
+      width: 48px;
+      height: 48px;
     }
   }
 
   .type__input-radio:checked ~ .type__input-label::after {
-    top: 12px;
-    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
     width: 20px;
     height: 20px;
   }
@@ -142,20 +144,21 @@
   .type__input-radio:disabled ~ .type__input-label::before {
     top: 0;
     left: 0;
-    width: 51px;
-    height: 51px;
+    width: 48px;
+    height: 48px;
   }
 
   .type__input-radio:disabled:checked ~ .type__input-label::before {
     top: 0;
     left: 0;
-    width: 51px;
-    height: 51px;
+    width: 48px;
+    height: 48px;
   }
 
   .type__input-radio:disabled:checked ~ .type__input-label::after {
-    top: 12px;
-    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
     width: 20px;
     height: 20px;
   }
