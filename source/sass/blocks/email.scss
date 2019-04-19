@@ -72,15 +72,15 @@
     padding-bottom: 52px;
 
     & .container {
-      position: relative;
       @include display-flex-start;
+      position: relative;
       justify-content: space-between;
     }
   }
 
   .email__title {
     width: 167px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-top: 17px;
   }
 

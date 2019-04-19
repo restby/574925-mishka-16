@@ -105,8 +105,8 @@
   }
 
   .production .container {
-    padding-bottom: 46px;
     @include display-flex-start;
+    padding-bottom: 46px;
     flex-wrap: wrap;
   }
 

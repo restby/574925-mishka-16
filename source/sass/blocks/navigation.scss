@@ -27,7 +27,8 @@
   border-bottom: 1px solid $color-grey;
   color: $color-black;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: rgba($color-black, 0.6);
     outline: none;
   }

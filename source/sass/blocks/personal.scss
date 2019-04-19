@@ -74,9 +74,9 @@
   }
 
   .personal__item {
+    @include display-flex-start;
     margin-bottom: 24px;
     min-height: 52px;
-    @include display-flex-start;
   }
 
   .personal__input-label {
