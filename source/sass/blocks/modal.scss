@@ -1,5 +1,5 @@
 .modal {
-  display: none;
+  // display: none;
   padding-top: 35px;
   padding-bottom: 46px;
   background-color: $color-white;
@@ -49,6 +49,7 @@
   width: 82px;
   padding-top: 14px;
   padding-bottom: 14px;
+  line-height: 17px;
   color: $color-text;
   border: 2px solid rgba($color-text, 0.1);
 
@@ -67,6 +68,7 @@
 
 .modal__btn {
   width: 100%;
+  font-size: 17px;
   line-height: 17px;
   color: $color-white;
   text-align: center;
