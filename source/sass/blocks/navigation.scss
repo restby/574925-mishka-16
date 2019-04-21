@@ -1,5 +1,5 @@
 .navigation {
-  // display: none;
+  display: none;
 }
 
 .navigation__list {
@@ -80,11 +80,15 @@
       border-top: none;
       margin-right: 35px;
       transform: translateY(106px);
+      position: relative;
+      z-index: 3;
     }
 
     &--form {
       margin-right: auto;
       transform: translateY(106px);
+      position: relative;
+      z-index: 3;
     }
   }
 

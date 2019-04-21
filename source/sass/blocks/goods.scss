@@ -1,10 +1,15 @@
 .goods {
-  padding-top: 27px;
-  padding-bottom: 41px;
   background-color: $color-white;
-  position: relative;
 
-  &::after {
+  & .container {
+    width: 320px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 27px;
+    padding-bottom: 41px;
+    position: relative;
+
+    &::after {
     position: absolute;
     content: "";
     bottom: 0;
@@ -14,6 +19,7 @@
     background-image: url("../../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-position: 0 0;
+    }
   }
 }
 
@@ -59,7 +65,7 @@
 
 
 .goods__field {
-  width: 98px;/*_____________*/
+  width: 93px;/*_____________*/
   padding: 0;
   border-bottom: 1px solid $color-grey;
   padding-top: 14px;
@@ -105,17 +111,19 @@ tr:nth-child(3) td.goods__value {
 
 @media (min-width: $tablet-width) {
   .goods {
-    padding-top: 41px;
-    padding-bottom: 68px;
+    & .container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 768px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 41px;
+      padding-bottom: 68px;
 
-    &::after {
+      &::after {
       height: 15px;
+      }
     }
-  }
-
-  .goods .container {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .goods__title {
@@ -190,16 +198,17 @@ tr:nth-child(3) td.goods__value {
 
 @media (min-width: $desktop-width) {
   .goods {
-    padding-top: 68px;
-    padding-bottom: 95px;
+    & .container {
+      width: 1050px;
+      padding-top: 68px;
+      padding-bottom: 95px;
+      padding-left: 0;
+      padding-right: 0;
 
-    &::after {
-      height: 23px;
+      &::after {
+        height: 23px;
+      }
     }
-  }
-
-  .goods .container {
-    position: relative;
   }
 
   .goods__title {
@@ -208,8 +217,8 @@ tr:nth-child(3) td.goods__value {
     margin-bottom: 0;
     margin-right: 0;
     position: absolute;
-    top: 52px;
-    left: 220px;
+    top: 120px;
+    left: 170px;
     z-index: 2;
   }
 
@@ -218,7 +227,7 @@ tr:nth-child(3) td.goods__value {
     margin-bottom: 0;
     margin-top: 68px;
     margin-right: 58px;
-    margin-left: 97px;
+    margin-left: 47px;
   }
 
   .goods__col {

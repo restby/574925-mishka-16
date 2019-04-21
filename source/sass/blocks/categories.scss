@@ -70,6 +70,8 @@
 @media (min-width: $tablet-width) {
   .categories {
     margin-top: -115px;
+    position: relative;
+    z-index: 3;
   }
 
   .categories__list {
