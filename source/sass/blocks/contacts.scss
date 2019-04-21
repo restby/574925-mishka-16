@@ -49,6 +49,10 @@
 
 .contacts__val--adress {
   padding-right: 42px;
+
+  & br {
+    display: none;
+  }
 }
 
 .contacts__val {
@@ -73,6 +77,12 @@
   margin-right: auto;
   width: 320px;
   height: 457px;
+}
+
+.contacts__img-pin {
+  position: absolute;
+  top: 145px;
+  left: 139px;
 }
 
 .contacts__link {
@@ -130,7 +140,11 @@
   }
 
   .contacts__val--adress {
-    padding-right: 49px;
+    padding-right: 39px;
+
+    & br {
+      display: inline;
+    }
   }
 
   .contacts__val {
@@ -139,6 +153,7 @@
 
   .contacts__map {
     margin-bottom: 55px;
+    width: 768px;
   }
 
   .contacts__img {
@@ -146,6 +161,11 @@
     margin-right: auto;
     width: 768px;
     height: 457px;
+  }
+
+  .contacts__img-pin {
+    top: 139px;
+    left: 363px;
   }
 
   .contacts__link {
@@ -197,7 +217,7 @@
   }
 
   .contacts__val--adress {
-    padding-right: 65px;
+    padding-right: 55px;
   }
 
   .contacts__val {
@@ -220,6 +240,11 @@
     margin-right: 0;
     width: 525px;
     height: 457px;
+  }
+
+  .contacts__img-pin {
+    top: 146px;
+    left: 239px;
   }
 
   .contacts__link {
