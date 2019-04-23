@@ -1,10 +1,17 @@
 .modal {
   display: none;
-  padding-top: 35px;
+  width: 100%;
+  max-width: 566px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 34px;
   padding-bottom: 46px;
   background-color: $color-white;
   border: 1px solid $color-grey;
   box-shadow: 0 10px 10px rgba($color-black, 0.25);
+  z-index: 6;
 }
 
 .modal__title {
@@ -26,10 +33,6 @@
   text-align: center;
 }
 
-// .modal__form {
-//
-// }
-
 .modal__list {
   @include list-reset;
   @include display-flex-start;
@@ -37,15 +40,28 @@
   margin-bottom: 31px;
 }
 
-// .modal__item {
-//
-// }
+.modal__item {
+  margin-right: 7px;
 
-// .modal__input {
-//
-// }
+  &:last-child {
+    margin-right: 0;
+  }
+}
 
-.madal__label {
+.modal__input:focus + .modal__label {
+  color: $color-text;
+  border: 2px solid rgba($color-text, 0.3);
+  background-color: $color-white;
+  outline: none;
+
+  &:active + .modal__label {
+    color: $color-text;
+    background-color: $color-white;
+    border: 2px solid $color-green;
+  }
+}
+
+.modal__label {
   width: 82px;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -72,7 +88,55 @@
   text-align: center;
   text-transform: uppercase;
   background-color: $color-green;
-  border: 0;
+  border: 2px solid $color-green;
   padding-top: 18px;
   padding-bottom: 17px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-text;
+    border: 2px solid $color-text;
+    color: $color-white;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-text;
+    border: 2px solid $color-text;
+    color: rgba($color-white, 0.3);
+  }
+}
+
+.modal__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color-white, 0.9);
+  z-index: 5;
+}
+
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 566px;
+
+    & .container {
+      width: 100%;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 57px;
+    text-transform: uppercase;
+  }
+
+  .modal__text {
+    font-size: 17px;
+  }
 }
