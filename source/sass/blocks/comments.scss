@@ -1,23 +1,25 @@
 .comments {
-  padding-top: 25px;
-  padding-bottom: 50px;
   background-color: $color-white;
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background-image: url("../../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: 0 0;
-  }
 
   & .container {
+    width: 320px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background-image: url("../../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-position: 0 0;
+    }
   }
 }
 
@@ -125,18 +127,30 @@
 
 @media (min-width: $tablet-width) {
   .comments {
-    padding-top: 77px;
-    padding-bottom: 101px;
-    background-image: url("../../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    padding-top: 0;
+    padding-bottom: 0;
 
-    &::after {
-      height: 15px;
+    & .container {
+      width: $tablet-width;
+      padding-top: 77px;
+      padding-bottom: 101px;
+      padding-left: 50px;
+      padding-right: 50px;
+      position: relative;
+      background-image: url("../../img/review@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/review@2x.jpg");
+        background-size: 700px auto;
+      }
+
+      &::after {
+        height: 15px;
+      }
     }
   }
-
-  /* КОСЯК фона на планшете*/
 
   .comments__title {
     margin-bottom: 48px;
@@ -160,8 +174,8 @@
   .comments__btn-group {
     width: 137px;
     position: absolute;
-    top: 280px;
-    right: 57px;
+    top: 357px;
+    right: 107px;
     justify-content: space-between;
   }
 
@@ -174,8 +188,8 @@
 
   .comments__link {
     position: absolute;
-    top: 3px;
-    right: 0;
+    top: 80px;
+    right: 50px;
     width: 175px;
     font-size: 17px;
   }
@@ -183,27 +197,28 @@
 
 @media (min-width: $desktop-width) {
   .comments {
-    padding-top: 78px;
-    padding-bottom: 89px;
-    background-position: 50px 77px;
+    padding-top: 77px;
 
-    &::after {
-      height: 23px;
+    & .container {
+      width: 1050px;
+      padding-top: 70px;
+      padding-bottom: 155px;
+      padding-left: 0;
+      padding-right: 0;
+      background-position: 0 0;
+
+      &::after {
+        height: 23px;
+      }
     }
   }
 
-  .comments .container {
-    padding-top: 69px;
-    padding-bottom: 67px;
-    position: relative;
-  }
-
   .comments__title {
-    margin-left: 220px;
+    margin-left: 170px;
   }
 
   .comments__slider {
-    margin-left: 225px;
+    margin-left: 175px;
   }
 
   .comments__text {
@@ -221,12 +236,12 @@
 
   .comments__link {
     top: 78px;
-    right: 50px;
+    right: 0;
   }
 
   .comments__btn-group {
     top: 306px;
-    right: 107px;
+    right: 57px;
     margin-bottom: 0;
   }
 }
