@@ -50,13 +50,12 @@
             <img role="img" src="img/logo-mobile.svg" alt="логотип магизина Mishka">
           </picture>
         </a>
-        <button class="main-header__btn" type="button" aria-label="меню">
-          <img role="img" src="img/icon-menu-close.svg" alt="кнопка меню">
+        <button class="main-header__btn  main-header__btn--no-js" type="button" aria-label="меню">
         </button>
       </div>
       <!-- /.main-header__bar -->
 
-      <nav class="navigation">
+      <nav class="navigation  navigation--no-js">
         <ul class="navigation__list">
           <li class="navigation__item  navigation__item--catalog">
             <a class="navigation__link  navigation__link--catalog" href="catalog.html" aria-label="ссылка на страницу Каталог товаров">Каталог товаров</a>
@@ -106,14 +105,14 @@
       <div class="categories">
         <ul class="categories__list">
           <li class="categories__item  categories__item--interior">
-            <a class="categories__link  categories__link--interior" href="#" aria-label="ссылка на страницу Предметы интерьера">
+            <a class="categories__link  categories__link--interior" href="interior.html" aria-label="ссылка на страницу Предметы интерьера">
               <h3 class="categories__item-title">Предметы интерьера</h3>
               <!-- /.categories__item-title -->
             </a>
           </li>
           <!-- /.categories__item -->
           <li class="categories__item  categories__item--toys">
-            <a class="categories__link  categories__link--toys" href="#" aria-label="ссылка на страницу Детские игрушки">
+            <a class="categories__link  categories__link--toys" href="toys.html" aria-label="ссылка на страницу Детские игрушки">
               <h3 class="categories__item-title">Детские игрушки</h3>
               <!-- /.categories__item-title -->
             </a>
@@ -247,7 +246,7 @@
         </button>
       </div>
       <!-- /.comments__btn-group -->
-      <button class="comments__link  link" aria-label="Написать отзыв">Написать</button>
+      <a class="comments__link  link" href="comments.html" aria-label="Написать отзыв">Написать</a>
     </div>
     <!-- /.container -->
   </section>
@@ -270,10 +269,10 @@
         <!-- /.contacts__item -->
       </ul>
       <!-- /.contacts__list -->
-      <button class="contacts__link  link" type="button" aria-label="Напишите нам">Напишите нам</button>
+      <a class="contacts__link  link" href="callback.html" aria-label="Напишите нам">Напишите нам</a>
     </div>
     <!-- /.container -->
-    <div class="contacts__map">
+    <div class="contacts__map  contacts__map--no-js">
       <picture>
         <!-- <source media="(min-width: 1150px)" type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x"> -->
         <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
@@ -285,13 +284,14 @@
       <img role="img" class="contacts__img-pin" width="67" height="100" src="img/icon-map-pin.svg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
     </div>
     <!-- /.contacts__map -->
+    <iframe class="contacts__map-interactive  contacts__map-interactive--nojs" src="https://yandex.by/map-widget/v1/-/CBRxeNsS1C" width="320" height="457" allowfullscreen="true"></iframe>
   </section>
   <!-- /.contacts -->
 
   <footer class="main-footer">
     <div class="container">
       <a class="logo  logo--main-footer" aria-label="ссылка на главную страницу магизина Mishka">
-        <img src="img/logo-footer.svg" alt="логотип магизина Mishka">
+        <img role="img" src="img/logo-footer.svg" alt="логотип магизина Mishka">
       </a>
 
       <div class="social">

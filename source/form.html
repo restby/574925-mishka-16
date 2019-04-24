@@ -65,13 +65,12 @@
             <img role="img" src="img/logo-mobile.svg" alt="логотип магизина Mishka">
           </picture>
         </a>
-        <button class="main-header__btn" type="button" aria-label="меню">
-          <img src="img/icon-menu-close.svg" alt="кнопка меню">
+        <button class="main-header__btn  main-header__btn--no-js" type="button" aria-label="меню">
         </button>
       </div>
       <!-- /.main-header__bar -->
 
-      <nav class="navigation">
+      <nav class="navigation  navigation--no-js">
         <ul class="navigation__list">
           <li class="navigation__item  navigation__item--catalog">
             <a class="navigation__link  navigation__link--catalog" href="catalog.html" aria-label="ссылка на страницу Каталог товаров">Каталог товаров</a>
@@ -274,7 +273,7 @@
   <footer class="main-footer">
     <div class="container">
       <a class="logo  logo--main-footer" aria-label="ссылка на главную страницу магизина Mishka">
-        <img src="img/logo-footer.svg" alt="логотип магизина Mishka">
+        <img role="img" src="img/logo-footer.svg" alt="логотип магизина Mishka">
       </a>
 
       <div class="social">
@@ -321,5 +320,7 @@
     <!-- /.container -->
   </footer>
   <!-- /.main-footer -->
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -12,6 +12,10 @@
   border: 1px solid $color-grey;
   box-shadow: 0 10px 10px rgba($color-black, 0.25);
   z-index: 6;
+
+  &--show {
+    display: block;
+  }
 }
 
 .modal__title {
@@ -116,6 +120,10 @@
   height: 100%;
   background-color: rgba($color-white, 0.9);
   z-index: 5;
+
+  &--show {
+    display: block;
+  }
 }
 
 
