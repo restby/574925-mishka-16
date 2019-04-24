@@ -97,6 +97,10 @@
       height: 34px;
       bottom: -14px;
     }
+
+    &::before {
+      background-color: $color-white;
+    }
   }
 
   .main-header__bar {
