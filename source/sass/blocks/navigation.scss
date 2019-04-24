@@ -27,13 +27,13 @@
   border-bottom: 1px solid $color-grey;
   color: $color-black;
 
-  &:hover,
-  &:focus {
+  &[href]:hover,
+  &[href]:focus {
     color: rgba($color-black, 0.6);
     outline: none;
   }
 
-  &:active {
+  &[href]:active {
     color: rgba($color-black, 0.3);
   }
 
