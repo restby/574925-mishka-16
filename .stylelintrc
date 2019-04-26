@@ -4,5 +4,10 @@
   "rules": {
     "declaration-no-important": true,
     "indentation": [2, {"ignore": ["inside-parens"]}]
-  }
+  },
+
+  "plugins": [
+    "stylelint-rational-order-plugin"
+  ],
+  "plugin/rational-order": true
 }
