@@ -6,6 +6,7 @@ var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var cssDeclarationSorter = require('css-declaration-sorter');
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -14,7 +15,8 @@ gulp.task("css", function () {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      cssDeclarationSorter({order: 'concentric-css'})
     ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
