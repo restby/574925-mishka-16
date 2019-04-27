@@ -12,6 +12,7 @@
 
 .categories__link {
   @include link-reset;
+  min-height: 119px;
   padding-top: 26px;
   padding-bottom: 29px;
   padding-left: 30px;
@@ -30,7 +31,10 @@
     opacity: 0.7;
   }
 
-  &:focus {
+  &:focus,
+  &:hover {
+    min-height: 124px;
+    padding-bottom: 34px;
     outline: 1px dotted $color-black;
   }
 }

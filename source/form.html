@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <svg style="display: none">
@@ -62,16 +62,15 @@
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" alt="логотип магизина Mishka">
+            <img role="img" src="img/logo-mobile.svg" alt="логотип магизина Mishka">
           </picture>
         </a>
-        <button class="main-header__btn" type="button" aria-label="меню">
-          <img src="img/icon-menu-close.svg" alt="кнопка меню">
+        <button class="main-header__btn  main-header__btn--no-js" type="button" aria-label="меню">
         </button>
       </div>
       <!-- /.main-header__bar -->
 
-      <nav class="navigation">
+      <nav class="navigation  navigation--no-js">
         <ul class="navigation__list">
           <li class="navigation__item  navigation__item--catalog">
             <a class="navigation__link  navigation__link--catalog" href="catalog.html" aria-label="ссылка на страницу Каталог товаров">Каталог товаров</a>
@@ -83,7 +82,7 @@
           <!-- /.navigation__item -->
           <li class="navigation__item  navigation__item--search">
             <a class="navigation__link  navigation__link--search" href="search.html" aria-label="ссылка на страницу Поиска">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"width="17.6px" height="17.6px" fill="#231F20">
+              <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"width="17.6px" height="17.6px" fill="#231F20">
                 <use xlink:href="#icon-search"></use>
               </svg>
               <span>Поиск по сайту</span>
@@ -92,7 +91,7 @@
           <!-- /.navigation__item -->
           <li class="navigation__item  navigation__item--cart">
             <a class="navigation__link  navigation__link--cart" href="cart.html" aria-label="ссылка на страницу Корзина">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.294px" height="18.849px" fill="#231F20">
+              <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.294px" height="18.849px" fill="#231F20">
                 <use xlink:href="#icon-cart"></use>
               </svg>Корзина: <span>пока пуста</span>
             </a>
@@ -202,12 +201,12 @@
           <ul class="personal__list">
             <li class="personal__item">
               <label class="personal__input-label  form__label" for="name">Имя:</label>
-              <input class="personal__input" type="text" id="name" placeholder="Введите ваше имя*">
+              <input class="personal__input" type="text" id="name" placeholder="Введите ваше имя*" required>
             </li>
             <!-- /.personal__item -->
             <li class="personal__item">
               <label class="personal__input-label  form__label" for="surname">Фамилия:</label>
-              <input class="personal__input" type="text" id="surname" placeholder="Укажите фамилию*">
+              <input class="personal__input" type="text" id="surname" placeholder="Укажите фамилию*" required>
             </li>
             <!-- /.personal__item -->
             <li class="personal__item">
@@ -226,9 +225,9 @@
         <div class="container">
           <legend class="phone__title  fieldset-legend">Тел</legend>
           <!-- /.phone__title  fieldset-legend -->
-          <input class="phone__input" type="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <input class="phone__input" type="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           <label class="phone__label" for="phone">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="24px">
+            <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="24px">
               <use xlink:href="#icon-phone"></use>
             </svg>
           </label>
@@ -241,9 +240,9 @@
         <div class="container">
           <legend class="email__title  fieldset-legend">E-mail</legend>
           <!-- /.phone__title  fieldset-legend -->
-          <input class="email__input" type="email" id="email" placeholder="Ваш Email*">
+          <input class="email__input" type="email" id="email" placeholder="Ваш Email*" required>
           <label class="email__label" for="email">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px">
+            <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px">
               <use xlink:href="#icon-mail"></use>
             </svg>
           </label>
@@ -274,14 +273,14 @@
   <footer class="main-footer">
     <div class="container">
       <a class="logo  logo--main-footer" aria-label="ссылка на главную страницу магизина Mishka">
-        <img src="img/logo-footer.svg" alt="логотип магизина Mishka">
+        <img role="img" src="img/logo-footer.svg" alt="логотип магизина Mishka">
       </a>
 
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="#" aria-label="ссылка на instagramm">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.769px" height="21.334px" fill="#231F20">
+              <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.769px" height="21.334px" fill="#231F20">
                 <use xlink:href="#icon-instagramm"></use>
               </svg>
             </a>
@@ -289,7 +288,7 @@
           <!-- /.social__item -->
           <li class="social__item">
             <a class="social__link" href="#" aria-label="ссылка на facebook">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14.962px" height="27.718px" fill="#231F20">
+              <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14.962px" height="27.718px" fill="#231F20">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
@@ -297,7 +296,7 @@
           <!-- /.social__item -->
           <li class="social__item">
             <a class="social__link" href="#" aria-label="ссылка на twitter">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.494px" height="20.168px" fill="#231F20">
+              <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.494px" height="20.168px" fill="#231F20">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
@@ -311,7 +310,7 @@
       <div class="develop">
         <a class="develop__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label=" лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
           <span class="develop__text">Разработано</span>
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="34px" fill="#63d1bb">
+          <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="34px" fill="#63d1bb">
             <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>
@@ -321,5 +320,8 @@
     <!-- /.container -->
   </footer>
   <!-- /.main-footer -->
+
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>
