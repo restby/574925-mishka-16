@@ -49,10 +49,6 @@
 
 .contacts__val--adress {
   padding-right: 42px;
-
-  & br {
-    display: none;
-  }
 }
 
 .contacts__val {
@@ -127,7 +123,7 @@
         right: 3px;
         width: 47px;
         height: 81px;
-        background-image: url("../../img/icon-flag.svg");
+        background-image: url("../img/icon-flag.svg");
         background-position: 0 0;
         background-repeat: no-repeat;
       }
@@ -225,6 +221,7 @@
   .contacts__item {
     @include display-flex-start;
     width: auto;
+    max-width: 350px;
 
     &:first-child {
       margin-bottom: 29px;

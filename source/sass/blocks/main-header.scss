@@ -22,13 +22,13 @@
 .main-header__btn {
   width: 20px;
   height: 21px;
-  margin-top: 29px;
-  margin-right: 30px;
+  margin-top: 32px;
+  margin-right: 31px;
   padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  background-image: url("../../img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -37,7 +37,7 @@
   }
 
   &--close {
-    background-image: url("../../img/icon-menu-close.svg");
+    background-image: url("../img/icon-menu-close.svg");
   }
 }
 
@@ -67,7 +67,7 @@
       z-index: 4;
       width: 100%;
       height: 22px;
-      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-position: 0 0;
     }

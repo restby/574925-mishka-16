@@ -35,7 +35,7 @@
     left: 33px;
     width: 32px;
     height: 32px;
-    background-image: url("../../img/icon-video.svg");
+    background-image: url("../img/icon-video.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
   }
@@ -64,7 +64,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("../../img/icon-play.svg");
+  background-image: url("../img/icon-play.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   transition: all 0.2s;
@@ -111,6 +111,7 @@
   }
 
   .production__item-title {
+    max-width: 289px;
     order: 2;
     margin-bottom: 32px;
     margin-top: 37px;
@@ -143,6 +144,7 @@
   }
 
   .production__item-desc {
+    max-width: 289px;
     order: 3;
     padding-left: 39px;
     padding-right: 39px;

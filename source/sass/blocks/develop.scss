@@ -1,5 +1,5 @@
 .develop {
-  padding-top: 24px;
+  padding-top: 19px;
   padding-bottom: 30px;
   background-color: $color-white-dark;
 }
@@ -29,6 +29,7 @@
 }
 
 .develop__text {
+  margin-top: 4px;
   margin-right: 28px;
   font-size: 19px;
   line-height: 19px;
@@ -46,5 +47,9 @@
     padding-top: 11px;
     padding-bottom: 0;
     background-color: none;
+  }
+
+  .develop__text {
+    margin-top: 0;
   }
 }
