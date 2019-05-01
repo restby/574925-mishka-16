@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>Странциа с формой. HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="fonts/opensans.woff2" as="font">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -40,7 +40,7 @@
           <!-- /.navigation__item -->
           <li class="navigation__item  navigation__item--search">
             <a class="navigation__link  navigation__link--search" href="search.html" aria-label="ссылка на страницу Поиска">
-              <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"width="17.6px" height="17.6px" fill="#231F20">
+              <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.6px" height="17.6px" fill="#231F20">
                 <use xlink:href="#icon-search"></use>
               </svg>
               <span>Поиск по сайту</span>
@@ -60,14 +60,14 @@
       </nav>
       <!-- /.navigation -->
 
-      <div class="promo  promo--catalog">
+      <div class="promo">
         <div class="promo__inner">
           <h1 class="promo__title  title">Вязание на заказ</h1>
           <!-- /.promo__title  title -->
         </div>
         <!-- /.promo__inner -->
       </div>
-      <!-- /.promo  promo--catalog -->
+      <!-- /.promo -->
       <p class="main-header__text">Бесплатная доставка по России</p>
       <!-- /.main-header__text -->
 
@@ -90,7 +90,7 @@
 
       <fieldset class="form__fieldset  type">
         <div class="container">
-          <legend class="type__title  fieldset-legend">Тип</legend>
+          <h2 class="type__title  fieldset-legend">Тип</h2>
           <!-- /.type__title -->
           <ul class="type__list">
             <li class="type__item">
@@ -112,7 +112,7 @@
 
       <fieldset class="form__fieldset  color">
         <div class="container">
-          <legend class="color__title  fieldset-legend">Цвет</legend>
+          <h2 class="color__title  fieldset-legend">Цвет</h2>
           <!-- /.color__title -->
           <ul class="color__list">
             <li class="color__item">
@@ -154,7 +154,7 @@
 
       <fieldset class="form__fieldset  personal">
         <div class="container">
-          <legend class="personal__title  fieldset-legend">ФИО</legend>
+          <h2 class="personal__title  fieldset-legend">ФИО</h2>
           <!-- /.personal__title -->
           <ul class="personal__list">
             <li class="personal__item">
@@ -181,9 +181,9 @@
 
       <fieldset class="form__fieldset  phone">
         <div class="container">
-          <legend class="phone__title  fieldset-legend">Тел</legend>
+          <h2 class="phone__title  fieldset-legend">Тел</h2>
           <!-- /.phone__title  fieldset-legend -->
-          <input class="phone__input" type="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          <input class="phone__input" type="tel" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           <label class="phone__label" for="phone">
             <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="24px">
               <use xlink:href="#icon-phone"></use>
@@ -196,7 +196,7 @@
 
       <fieldset class="form__fieldset  email">
         <div class="container">
-          <legend class="email__title  fieldset-legend">E-mail</legend>
+          <h2 class="email__title  fieldset-legend">E-mail</h2>
           <!-- /.phone__title  fieldset-legend -->
           <input class="email__input" type="email" id="email" placeholder="Ваш Email*" required>
           <label class="email__label" for="email">
@@ -211,7 +211,7 @@
 
       <fieldset class="form__fieldset  textarea">
         <div class="container">
-          <legend class="textarea__title  fieldset-legend">Доп</legend>
+          <h2 class="textarea__title  fieldset-legend">Доп</h2>
           <!-- /.textarea__title  fieldset-legend -->
           <textarea class="textarea__field" cols="1" rows="1" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>

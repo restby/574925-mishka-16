@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>Главная странциа. HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="fonts/opensans.woff2" as="font">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -40,7 +40,7 @@
           <!-- /.navigation__item -->
           <li class="navigation__item  navigation__item--search">
             <a class="navigation__link  navigation__link--search" href="search.html" aria-label="ссылка на страницу Поиска">
-              <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"width="17.6px" height="17.6px" fill="#231F20">
+              <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.6px" height="17.6px" fill="#231F20">
                 <use xlink:href="#icon-search"></use>
               </svg>
               <span>Поиск по сайту</span>
@@ -257,7 +257,7 @@
       <img role="img" class="contacts__img-pin" width="67" height="100" src="img/icon-map-pin.svg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
     </div>
     <!-- /.contacts__map -->
-    <iframe class="contacts__map-interactive  contacts__map-interactive--nojs" src="https://yandex.by/map-widget/v1/-/CBRxeNsS1C" width="320" height="457" allowfullscreen="true"></iframe>
+    <iframe class="contacts__map-interactive  contacts__map-interactive--nojs" src="https://yandex.by/map-widget/v1/-/CBRxeNsS1C" width="320" height="457"></iframe>
   </section>
   <!-- /.contacts -->
 
@@ -317,7 +317,7 @@
       <h2 class="modal__title  title">Добавить в корзину</h2>
       <!-- /.modal__title  title -->
       <p class="modal__text">Выберите размер:</p>
-      <form action="" class="modal__form">
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
         <ul class="modal__list">
           <li class="modal__item">
             <input class="modal__input  visually-hidden" type="radio" name="size" value="size_S" id="size_S">

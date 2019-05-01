@@ -20,6 +20,7 @@
 
 .fieldset-legend {
   @include ma-pa-reset;
+  font-size: 17px;
   line-height: 17px;
   color: $color-green;
   text-transform: uppercase;

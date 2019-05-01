@@ -4,16 +4,9 @@
   <meta charset="UTF-8">
   <title>Странциа каталога. HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="fonts/opensans.woff2" as="font">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
 </head>
 <body>
   <div style="display:none">
@@ -30,7 +23,7 @@
             <img role="img" src="img/logo-mobile.svg" alt="логотип магизина Mishka">
           </picture>
         </a>
-        <button class="main-header__btn  main-header__btn--no-js" type="button" aria-label="меню">
+        <button class="main-header__btn  main-header__btn--no-js" type="button" aria-label="меню"></button>
       </div>
       <!-- /.main-header__bar -->
 
@@ -46,7 +39,7 @@
           <!-- /.navigation__item -->
           <li class="navigation__item  navigation__item--search">
             <a class="navigation__link  navigation__link--search" href="search.html" aria-label="ссылка на страницу Поиска">
-              <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"width="17.6px" height="17.6px" fill="#231F20">
+              <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.6px" height="17.6px" fill="#231F20">
                 <use xlink:href="#icon-search"></use>
               </svg>
               <span>Поиск по сайту</span>
@@ -67,14 +60,14 @@
       </nav>
       <!-- /.navigation -->
 
-      <div class="promo  promo--catalog">
+      <div class="promo">
         <div class="promo__inner">
           <h1 class="promo__title  title">Каталог товаров</h1>
           <!-- /.promo__title  title -->
         </div>
         <!-- /.promo__inner -->
       </div>
-      <!-- /.promo  promo--catalog -->
+      <!-- /.promo -->
 
       <p class="main-header__text">Бесплатная доставка по России</p>
       <!-- /.main-header__text -->
@@ -112,7 +105,7 @@
           <div class="galery__inner">
             <span class="galery__price"><span>1200 </span>руб.</span>
             <button class="galery__btn" type="button" aria-label="кнопка добавить в корзину">
-              <svg role="img"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.294px" height="18.849px" fill="#231F20">
+              <svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.294px" height="18.849px" fill="#231F20">
                 <use xlink:href="#icon-cart"></use>
               </svg>
             </button>
@@ -213,7 +206,7 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="#" aria-label="ссылка на instagramm">
-              <svg  role="img"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.769px" height="21.334px" fill="#231F20">
+              <svg  role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.769px" height="21.334px" fill="#231F20">
                 <use xlink:href="#icon-instagramm"></use>
               </svg>
             </a>
@@ -259,7 +252,7 @@
       <h2 class="modal__title  title">Добавить в корзину</h2>
       <!-- /.modal__title  title -->
       <p class="modal__text">Выберите размер:</p>
-      <form action="" class="modal__form">
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
         <ul class="modal__list">
           <li class="modal__item">
             <input class="modal__input  visually-hidden" type="radio" name="size" value="size_S" id="size_S">

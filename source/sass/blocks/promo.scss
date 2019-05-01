@@ -35,15 +35,13 @@
   .promo {
     padding-top: 95px;
     padding-bottom: 85px;
+    background-color: $color-white-dark;
   }
 
   .promo--index {
     padding-top: 153px;
     padding-bottom: 490px;
-  }
-
-  .promo--catalog {
-    background-color: $color-white-dark;
+    background-color: $color-grey;
   }
 
   .promo__title {
@@ -60,13 +58,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .promo {
+    padding-bottom: 107px;
+  }
+
   .promo--index {
     padding-top: 153px;
     padding-bottom: 490px;
-  }
-
-  .promo--catalog {
-    padding-bottom: 107px;
   }
 
   .promo__title {
